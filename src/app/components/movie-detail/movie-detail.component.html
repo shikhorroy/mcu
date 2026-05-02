@@ -1,0 +1,120 @@
+@if (movie()) {
+  <div class="backdrop" (click)="onClose.emit()" aria-hidden="true"></div>
+  <div class="panel" [class]="'phase-border-' + phaseNumber()" role="dialog" [attr.aria-label]="movie()!.title + ' details'">
+    <div class="drag-handle" aria-hidden="true"></div>
+    <button class="close-btn" (click)="onClose.emit()" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <div class="panel-hero" [style.background]="movie()!.posterGradient">
+      @if (heroImageUrl()) {
+        <img
+          class="hero-bg-img"
+          [src]="heroImageUrl()!"
+          [alt]="movie()!.title"
+          [class.loaded]="heroImageLoaded()"
+          (load)="onHeroLoad()"
+          (error)="onHeroError()"
+        />
+      }
+      <div class="hero-gradient-overlay"></div>
+      <div class="hero-badges">
+        <span class="badge-year">{{ movie()!.year }}</span>
+        <span class="badge-importance" [class]="'imp-' + movie()!.importance">{{ movie()!.importance.toUpperCase() }}</span>
+        <span class="badge-phase">Phase {{ movie()!.phase }}</span>
+      </div>
+      <h2 class="hero-title">{{ movie()!.title }}</h2>
+      <div class="hero-watched">
+        @if (!confirmRemove) {
+          <button class="watched-btn" [class.watched]="isWatched()" (click)="toggleWatched()">
+            @if (isWatched()) {
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Watched
+            } @else {
+              + Add to watched
+            }
+          </button>
+        } @else {
+          <div class="confirm-remove">
+            <span>Remove?</span>
+            <button class="confirm-yes" (click)="toggleWatched()">Yes</button>
+            <button class="confirm-no" (click)="cancelRemove()">No</button>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="panel-content">
+      <div class="movie-nav-row">
+        <button class="movie-nav-btn" (click)="goPrevMovie()" [disabled]="!prevMovie()" aria-label="Previous movie in this phase">
+          Previous
+        </button>
+        <button class="movie-nav-btn" (click)="goNextMovie()" [disabled]="!nextMovie()" aria-label="Next movie in this phase">
+          Next
+        </button>
+      </div>
+
+      <h3 class="section-heading">{{ movie()!.title }}</h3>
+      <p class="synopsis">{{ movie()!.synopsis }}</p>
+
+      @if (movie()!.infinityStone) {
+        <div class="stone-callout">
+          <div class="stone-visual" [style.--stone-color]="movie()!.infinityStone!.color">
+            @if (stoneImageUrl() && !stoneImageFailed()) {
+              <img
+                class="stone-image"
+                [src]="stoneImageUrl()!"
+                [alt]="movie()!.infinityStone!.name"
+                (error)="onStoneImageError()"
+              />
+            } @else {
+              <div class="stone-fallback"></div>
+            }
+          </div>
+          <div class="stone-info">
+            <div class="stone-name">{{ movie()!.infinityStone!.name }}</div>
+            <div class="stone-location">{{ movie()!.infinityStone!.location }}</div>
+          </div>
+        </div>
+      }
+
+      <h3 class="section-heading">Story Events</h3>
+      <div class="events-list">
+        @for (event of movie()!.keyEvents; track event.id) {
+          <div class="event-card" [class]="sigClass(event.significance)">
+            <div class="event-sig-bar"></div>
+            <div class="event-body">
+              <div class="event-title">{{ event.title }}</div>
+              <p class="event-desc">{{ event.description }}</p>
+            </div>
+          </div>
+        }
+      </div>
+
+       <h3 class="section-heading">Story Roles</h3>
+       <div class="chars-grid">
+         @for (char of characters(); track char.id) {
+           <button class="char-card" (click)="onCharacterClick.emit(char.id)">
+             <div class="char-avatar" [style.background]="!char.imagePath ? char.avatarColor : ''">
+               @if (char.imagePath) {
+                 <img [src]="char.imagePath" [alt]="char.name" class="char-image" />
+               } @else {
+                 {{ getInitials(char.name) }}
+               }
+             </div>
+             <div class="char-info">
+               <div class="char-name">{{ char.name }}</div>
+               @if (char.alias) { <div class="char-alias">{{ char.alias }}</div> }
+               <div class="char-badges">
+                 <span class="side-badge" [class]="'side-' + char.side">{{ char.side }}</span>
+                 @if (isIntroduced(char.id)) { <span class="debut-badge">DEBUT</span> }
+               </div>
+             </div>
+           </button>
+         }
+       </div>
+    </div>
+  </div>
+}

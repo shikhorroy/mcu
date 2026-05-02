@@ -1,0 +1,95 @@
+<section class="graph-section">
+  <div class="graph-header">
+    <h2 class="graph-title">THE UNIVERSE CONNECTED</h2>
+    <p class="graph-subtitle">Explore 29 characters and their relationships</p>
+  </div>
+
+  @if (!isMobile()) {
+    <div class="graph-container"></div>
+    <div class="graph-legend">
+      <span class="legend-item ally">Ally</span>
+      <span class="legend-item enemy">Enemy</span>
+      <span class="legend-item mentor">Mentor</span>
+      <span class="legend-item family">Family</span>
+      <span class="legend-item rival">Rival</span>
+    </div>
+    @if (tooltip()) {
+      <div class="tooltip" [style.left.px]="tooltip()!.x + 12" [style.top.px]="tooltip()!.y - 40">
+        <div class="tooltip-name">{{ tooltip()!.char.name }}</div>
+        <div class="tooltip-desc">{{ tooltip()!.char.description }}</div>
+      </div>
+    }
+  } @else {
+    <div class="mobile-char-list">
+       <div class="mobile-group">
+         <h3 class="group-heading">Heroes</h3>
+         @for (char of characters(); track char.id) {
+           @if (char.side === 'hero') {
+             <button class="mobile-char-card" (click)="onCharacterClick.emit(char.id)">
+               <div class="mobile-avatar" [style.background]="!char.imagePath ? char.avatarColor : ''">
+                 @if (char.imagePath) {
+                   <img [src]="char.imagePath" [alt]="char.name" class="mobile-image" />
+                 } @else {
+                   {{ getInitials(char.name) }}
+                   <img class="mobile-portrait" [src]="getPortrait(char.id)" [alt]="char.name"
+                     (load)="onMobilePortraitLoad($event)" (error)="onMobilePortraitError($event)" />
+                 }
+               </div>
+               <div class="mobile-info">
+                 <div class="mobile-name">{{ char.name }}</div>
+                 @if (char.alias) { <div class="mobile-alias">{{ char.alias }}</div> }
+                 <div class="mobile-desc">{{ char.description }}</div>
+               </div>
+             </button>
+           }
+         }
+       </div>
+       <div class="mobile-group">
+         <h3 class="group-heading">Villains</h3>
+         @for (char of characters(); track char.id) {
+           @if (char.side === 'villain') {
+             <button class="mobile-char-card" (click)="onCharacterClick.emit(char.id)">
+               <div class="mobile-avatar" [style.background]="!char.imagePath ? char.avatarColor : ''">
+                 @if (char.imagePath) {
+                   <img [src]="char.imagePath" [alt]="char.name" class="mobile-image" />
+                 } @else {
+                   {{ getInitials(char.name) }}
+                   <img class="mobile-portrait" [src]="getPortrait(char.id)" [alt]="char.name"
+                     (load)="onMobilePortraitLoad($event)" (error)="onMobilePortraitError($event)" />
+                 }
+               </div>
+               <div class="mobile-info">
+                 <div class="mobile-name">{{ char.name }}</div>
+                 @if (char.alias) { <div class="mobile-alias">{{ char.alias }}</div> }
+                 <div class="mobile-desc">{{ char.description }}</div>
+               </div>
+             </button>
+           }
+         }
+       </div>
+       <div class="mobile-group">
+         <h3 class="group-heading">Neutral</h3>
+         @for (char of characters(); track char.id) {
+           @if (char.side === 'neutral') {
+             <button class="mobile-char-card" (click)="onCharacterClick.emit(char.id)">
+               <div class="mobile-avatar" [style.background]="!char.imagePath ? char.avatarColor : ''">
+                 @if (char.imagePath) {
+                   <img [src]="char.imagePath" [alt]="char.name" class="mobile-image" />
+                 } @else {
+                   {{ getInitials(char.name) }}
+                   <img class="mobile-portrait" [src]="getPortrait(char.id)" [alt]="char.name"
+                     (load)="onMobilePortraitLoad($event)" (error)="onMobilePortraitError($event)" />
+                 }
+               </div>
+               <div class="mobile-info">
+                 <div class="mobile-name">{{ char.name }}</div>
+                 @if (char.alias) { <div class="mobile-alias">{{ char.alias }}</div> }
+                 <div class="mobile-desc">{{ char.description }}</div>
+               </div>
+             </button>
+           }
+         }
+       </div>
+    </div>
+  }
+</section>

@@ -1,0 +1,120 @@
+<div class="backdrop" (click)="onClose.emit()" aria-hidden="true"></div>
+<div class="panel" role="dialog" aria-label="My Journey">
+  <div class="drag-handle" aria-hidden="true"></div>
+  <button class="close-btn" (click)="onClose.emit()" aria-label="Close">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+
+  <div class="panel-content">
+    <h2 class="panel-title">My Journey</h2>
+
+    <!-- Overall progress ring -->
+    <div class="progress-ring-section">
+      <svg width="120" height="120" viewBox="0 0 120 120">
+        <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="6"/>
+        <circle
+          cx="60" cy="60" r="52"
+          fill="none"
+          stroke="var(--color-accent-gold)"
+          stroke-width="6"
+          stroke-linecap="round"
+          [attr.stroke-dasharray]="circumference"
+          [attr.stroke-dashoffset]="dashOffset"
+          transform="rotate(-90 60 60)"
+          style="transition: stroke-dashoffset 0.5s ease"
+        />
+        <text x="60" y="56" text-anchor="middle" font-size="18" fill="var(--color-accent-gold)" font-family="Cinzel,serif" font-weight="700">{{ progress.watchedCount() }}</text>
+        <text x="60" y="72" text-anchor="middle" font-size="11" fill="var(--color-text-muted)">/ {{ totalMovies }}</text>
+      </svg>
+      <div class="ring-label">{{ progress.exploredCount() }} characters explored</div>
+    </div>
+
+    <!-- By Saga -->
+    <div class="section">
+      <h3 class="section-title">By Saga</h3>
+      <div class="saga-row">
+        <div class="saga-info">
+          <span class="saga-name">Infinity Saga</span>
+          <span class="saga-count">{{ infinitySagaWatched() }} / 23</span>
+        </div>
+        <div class="mini-bar"><div class="mini-fill gold" [style.width.%]="infinitySagaWatched() / 23 * 100"></div></div>
+      </div>
+      <div class="saga-row">
+        <div class="saga-info">
+          <span class="saga-name">Multiverse Saga</span>
+          <span class="saga-count">{{ multiverseSagaWatched() }} / 14</span>
+        </div>
+        <div class="mini-bar"><div class="mini-fill purple" [style.width.%]="multiverseSagaWatched() / 14 * 100"></div></div>
+      </div>
+    </div>
+
+    <!-- By Phase -->
+    <div class="section">
+      <h3 class="section-title">By Phase</h3>
+      @for (phase of dataService.phases(); track phase.id) {
+        <button class="phase-row" (click)="scrollToPhase(phase.id)">
+          <div class="phase-dot" [style.background]="'var(--phase-' + phase.id + ')'"></div>
+          <div class="phase-row-info">
+            <span class="phase-row-name">{{ phase.name }}</span>
+            @if (phaseIsComplete(phase.id)) {
+              <span class="complete-chip">COMPLETE</span>
+            }
+          </div>
+          <div class="phase-row-right">
+            <div class="mini-bar phase-bar">
+              <div class="mini-fill" [style.background]="'var(--phase-' + phase.id + ')'" [style.width.%]="phaseWatched(phase.id) / phaseTotal(phase.id) * 100"></div>
+            </div>
+            <span class="phase-count-txt">{{ phaseWatched(phase.id) }}/{{ phaseTotal(phase.id) }}</span>
+          </div>
+        </button>
+      }
+    </div>
+
+    <!-- Recently watched -->
+    @if (recentlyWatched().length) {
+      <div class="section">
+        <h3 class="section-title">Recently Watched</h3>
+        <div class="recent-list">
+          @for (movie of recentlyWatched(); track movie!.id) {
+            <div class="recent-item">
+              <div class="recent-swatch" [style.background]="movie!.posterGradient"></div>
+              <div class="recent-info">
+                <div class="recent-title">{{ movie!.title }}</div>
+                <div class="recent-year">{{ movie!.year }}</div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+
+    <!-- Characters -->
+    <div class="section">
+      <h3 class="section-title">Characters - {{ progress.exploredCount() }} / 29 discovered</h3>
+      <div class="chars-grid">
+        @for (c of exploredChars(); track c.id) {
+          <div class="char-dot" [class.explored]="c.explored" [style.background]="c.explored ? c.avatarColor : 'rgba(255,255,255,0.08)'" [attr.title]="c.name">
+            <span class="char-dot-initials" [style.opacity]="c.explored ? 1 : 0.3">
+              {{ getInitials(c.name) }}
+            </span>
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- Reset -->
+    <div class="reset-section">
+      @if (!confirmReset()) {
+        <button class="reset-btn" (click)="startReset()">Reset my progress</button>
+      } @else {
+        <div class="reset-confirm">
+          <span>Clear all data?</span>
+          <button class="btn-reset-yes" (click)="doReset()">Reset</button>
+          <button class="btn-reset-no" (click)="cancelReset()">Cancel</button>
+        </div>
+      }
+    </div>
+  </div>
+</div>

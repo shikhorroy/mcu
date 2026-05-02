@@ -1,0 +1,101 @@
+@use '../../../breakpoints' as *;
+
+.snap-banner {
+  width: 100%;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #1a0000, #2d0000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(226,54,54,0.2);
+  border-bottom: 1px solid rgba(226,54,54,0.2);
+
+  @include mobile { padding: 2rem 1rem; }
+}
+
+.snap-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 3px; height: 3px;
+  background: rgba(226,54,54,0.6);
+  border-radius: 50%;
+  top: calc(var(--i, 1) * 8%);
+  left: calc(var(--i, 1) * 8%);
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: particle-float calc(var(--i, 1) * 0.5s + 2s) ease-in-out infinite alternate;
+  }
+}
+
+@keyframes particle-float {
+  from { transform: translate(0, 0) scale(1); opacity: 0.6; }
+  to { transform: translate(calc(var(--i, 1) * 5px - 25px), calc(var(--i, 1) * -4px - 10px)) scale(0.3); opacity: 0; }
+}
+
+.snap-text {
+  font-family: var(--font-display);
+  font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+  color: #fff;
+  letter-spacing: 0.3em;
+  margin: 0;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  z-index: 1;
+
+  @include mobile { letter-spacing: 0.1em; }
+}
+
+.transition-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  min-height: 60px;
+
+  @include mobile { padding: 0.75rem 1rem; }
+}
+
+.thread-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+  border-left: 3px solid transparent;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+
+  @include mobile { font-size: 0.7rem; padding: 0.25rem 0.6rem; }
+
+  svg { flex-shrink: 0; }
+
+  &.thread-direct-sequel {
+    border-left-color: var(--color-accent-gold);
+    svg { color: var(--color-accent-gold); }
+  }
+  &.thread-cause-effect {
+    border-left-color: var(--color-accent-red);
+    svg { color: var(--color-accent-red); }
+  }
+  &.thread-character-arc {
+    border-left-color: var(--color-accent-blue);
+    svg { color: var(--color-accent-blue); }
+  }
+  &.thread-infinity-stone {
+    border-left-color: var(--phase-4);
+    svg { color: var(--phase-4); }
+  }
+}

@@ -1,0 +1,102 @@
+@if (character()) {
+  <div class="backdrop" (click)="onClose.emit()" aria-hidden="true"></div>
+  <div class="panel" role="dialog" [attr.aria-label]="character()!.name + ' details'">
+    <div class="drag-handle" aria-hidden="true"></div>
+    <button class="close-btn" (click)="onClose.emit()" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <div class="panel-header">
+      <div class="char-avatar-lg" [style.background]="character()!.avatarColor">
+        {{ getInitials(character()!.name) }}
+        @if (portraitUrl()) {
+          <img
+            class="portrait-img"
+            [src]="portraitUrl()!"
+            [alt]="character()!.name"
+            [class.loaded]="portraitLoaded()"
+            (load)="onPortraitLoad()"
+            (error)="onPortraitError($event)"
+          />
+        }
+      </div>
+      <div class="char-meta">
+        <h2 class="char-name">{{ character()!.name }}</h2>
+        @if (character()!.alias) { <div class="char-alias">{{ character()!.alias }}</div> }
+        <div class="char-badges">
+          <span class="side-badge" [class]="'side-' + character()!.side">{{ character()!.side }}</span>
+          <span class="phase-badge">Phase {{ character()!.phaseIntroduced }}</span>
+        </div>
+        <p class="char-desc">{{ character()!.description }}</p>
+      </div>
+      <div class="arc-ring">
+        <svg width="80" height="80" viewBox="0 0 80 80">
+          <circle cx="40" cy="40" r="36" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="4"/>
+          <circle
+            cx="40" cy="40" r="36"
+            fill="none"
+            stroke="var(--color-accent-gold)"
+            stroke-width="4"
+            stroke-linecap="round"
+            [attr.stroke-dasharray]="arcCircumference"
+            [attr.stroke-dashoffset]="arcDashOffset"
+            transform="rotate(-90 40 40)"
+          />
+          <text x="40" y="44" text-anchor="middle" font-size="14" fill="var(--color-accent-gold)" font-family="Cinzel, serif">{{ arcPct() }}%</text>
+        </svg>
+        <div class="arc-label">arc watched</div>
+      </div>
+    </div>
+
+    <div class="panel-content">
+      <h3 class="section-heading">Character Story Arc</h3>
+      <div class="movie-arc">
+         @for (movie of movies(); track movie.id) {
+           <div class="arc-entry" [class.watched]="isMovieWatched(movie.id)">
+             <div class="arc-indicator">
+               @if (isMovieWatched(movie.id)) {
+                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-gold)" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+               } @else {
+                 <div class="arc-dot" [style.background]="'var(--phase-' + getPhaseForMovie(movie.id) + ')'"></div>
+               }
+             </div>
+             <div class="arc-movie-swatch" [style.background]="movie.posterGradient">
+               @if (movie.imagePath) {
+                 <img [src]="movie.imagePath" [alt]="movie.title" class="arc-movie-img" />
+               }
+             </div>
+             <div class="arc-movie-info">
+               <div class="arc-movie-title">{{ movie.title }}</div>
+               <div class="arc-movie-year">{{ movie.year }}</div>
+               @if (isDebut(movie.id)) { <span class="debut-badge">DEBUT</span> }
+             </div>
+           </div>
+         }
+      </div>
+
+       <h3 class="section-heading">Relationships</h3>
+       <div class="connections-list">
+         @for (conn of character()!.connections; track conn.characterId) {
+           @if (getConnectedChar(conn.characterId); as other) {
+             <button class="conn-card" (click)="onMovieClick.emit(conn.characterId)">
+               <div class="conn-avatar" [style.background]="!other.imagePath ? other.avatarColor : ''">
+                 @if (other.imagePath) {
+                   <img [src]="other.imagePath" [alt]="other.name" class="conn-image" />
+                 } @else {
+                   {{ getInitials(other.name) }}
+                 }
+               </div>
+               <div class="conn-info">
+                 <div class="conn-name">{{ other.name }}</div>
+                 <div class="conn-desc">{{ conn.description }}</div>
+               </div>
+               <span class="rel-badge" [class]="'rel-' + conn.relationshipType">{{ conn.relationshipType }}</span>
+             </button>
+           }
+         }
+       </div>
+    </div>
+  </div>
+}

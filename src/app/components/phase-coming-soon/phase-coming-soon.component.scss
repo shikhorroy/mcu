@@ -1,0 +1,81 @@
+@use '../../../breakpoints' as *;
+
+.coming-soon-section {
+  padding: var(--section-padding);
+  border-left: 4px solid var(--phase-6);
+  background: linear-gradient(135deg, rgba(255,112,67,0.03) 0%, transparent 60%);
+
+  @include tablet { padding: var(--section-padding-tablet); }
+  @include mobile { padding: var(--section-padding-mobile); }
+}
+
+.cs-header {
+  margin-bottom: 2rem;
+}
+
+.cs-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid var(--phase-6);
+  border-radius: 20px;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--phase-6);
+  margin-bottom: 0.75rem;
+}
+
+.cs-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem;
+  color: var(--color-text-primary);
+  text-rendering: optimizeLegibility;
+
+  @include mobile { font-size: 1.5rem; }
+}
+
+.cs-tagline {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.cs-movies {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 500px;
+}
+
+.cs-movie {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+  border-left: 3px solid rgba(255,112,67,0.3);
+}
+
+.cs-movie-title {
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+}
+
+.cs-movie-year {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-display);
+}
+
+.cs-status-badge {
+  font-size: 0.65rem;
+  padding: 2px 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.status-released .cs-status-badge { background: rgba(102,187,106,0.2); color: #66bb6a; }
+.status-filming .cs-status-badge { background: rgba(201,168,76,0.2); color: var(--color-accent-gold); }
+.status-announced .cs-status-badge { background: rgba(79,195,247,0.15); color: var(--color-accent-blue); }

@@ -1,0 +1,1100 @@
+[
+  {
+    "id": "tony-stark",
+    "name": "Tony Stark",
+    "alias": "Iron Man",
+    "side": "hero",
+    "phaseIntroduced": 1,
+    "description": "A billionaire engineer who built a suit of armor and spent his life learning that heroism means sacrifice.",
+    "avatarColor": "#b22222",
+    "imagePath": "assets/images/characters/tony-stark.jpg",
+    "movieIds": [
+      "iron-man-2008",
+      "iron-man-2-2010",
+      "avengers-2012",
+      "iron-man-3-2013",
+      "avengers-age-of-ultron-2015",
+      "captain-america-civil-war-2016",
+      "spider-man-homecoming-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019"
+    ],
+    "connections": [
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "rival",
+        "description": "Polar opposites in ideology who clashed bitterly yet shared a deep, unspoken respect forged in battle."
+      },
+      {
+        "characterId": "peter-parker",
+        "relationshipType": "mentor",
+        "description": "Tony recruited and mentored Peter, becoming the father figure the young hero never had."
+      },
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Natasha served as Tony's S.H.I.E.L.D. handler and remained a steadfast comrade throughout his journey."
+      },
+      {
+        "characterId": "nick-fury",
+        "relationshipType": "ally",
+        "description": "Fury saw Tony's potential before anyone else and set the Avengers Initiative in motion around him."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Tony was cursed with the knowledge of Thanos long before they met, and their confrontation cost him everything."
+      }
+    ]
+  },
+  {
+    "id": "steve-rogers",
+    "name": "Steve Rogers",
+    "alias": "Captain America",
+    "side": "hero",
+    "phaseIntroduced": 1,
+    "description": "A man out of time who embodies true heroism, willing to fight for what is right no matter the cost.",
+    "avatarColor": "#1565c0",
+    "imagePath": "assets/images/characters/steve-rogers.jpg",
+    "movieIds": [
+      "captain-america-first-avenger-2011",
+      "avengers-2012",
+      "captain-america-winter-soldier-2014",
+      "avengers-age-of-ultron-2015",
+      "captain-america-civil-war-2016",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019"
+    ],
+    "connections": [
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "rival",
+        "description": "Steve's unwavering moral compass and Tony's pragmatic ambition put them at war before uniting them in purpose."
+      },
+      {
+        "characterId": "bucky-barnes",
+        "relationshipType": "family",
+        "description": "Steve's oldest friend, whose fall and resurrection as the Winter Soldier defined the most personal battle of Steve's life."
+      },
+      {
+        "characterId": "sam-wilson",
+        "relationshipType": "ally",
+        "description": "Sam became Steve's most trusted partner and the man Steve chose to carry on the Captain America legacy."
+      },
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Natasha and Steve's partnership grew into one of the MCU's most genuine friendships built on mutual trust."
+      }
+    ]
+  },
+  {
+    "id": "thor-odinson",
+    "name": "Thor Odinson",
+    "alias": "God of Thunder",
+    "side": "hero",
+    "phaseIntroduced": 1,
+    "description": "An arrogant prince of Asgard who was humbled by mortality and grew into a grief-stricken yet enduring king.",
+    "avatarColor": "#1a237e",
+    "imagePath": "assets/images/characters/thor-odinson.jpg",
+    "movieIds": [
+      "thor-2011",
+      "avengers-2012",
+      "thor-dark-world-2013",
+      "avengers-age-of-ultron-2015",
+      "captain-america-civil-war-2016",
+      "thor-ragnarok-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "thor-love-and-thunder-2022"
+    ],
+    "connections": [
+      {
+        "characterId": "loki",
+        "relationshipType": "family",
+        "description": "Thor's complicated love for his adoptive brother Loki defined his greatest triumphs and most devastating losses."
+      },
+      {
+        "characterId": "bruce-banner",
+        "relationshipType": "ally",
+        "description": "Thor and Hulk formed an unlikely gladiatorial friendship on Sakaar that became a bond of genuine brotherhood."
+      },
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Natasha and Thor fought side by side as core Avengers, sharing deep mutual respect."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Thanos killed Loki before Thor's eyes and nearly ended his people, making the Mad Titan Thor's most personal enemy."
+      }
+    ]
+  },
+  {
+    "id": "bruce-banner",
+    "name": "Bruce Banner",
+    "alias": "Hulk",
+    "side": "hero",
+    "phaseIntroduced": 1,
+    "description": "A brilliant scientist haunted by the monster within him who ultimately found peace by becoming something in between.",
+    "avatarColor": "#2e7d32",
+    "imagePath": "assets/images/characters/bruce-banner.jpg",
+    "movieIds": [
+      "incredible-hulk-2008",
+      "avengers-2012",
+      "avengers-age-of-ultron-2015",
+      "thor-ragnarok-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019"
+    ],
+    "connections": [
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "ally",
+        "description": "Tony and Bruce bonded instantly as fellow scientific geniuses, calling themselves science bros."
+      },
+      {
+        "characterId": "thor-odinson",
+        "relationshipType": "ally",
+        "description": "Thor and Hulk clashed as gladiators on Sakaar and emerged as unlikely yet loyal friends."
+      },
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Natasha developed a unique method of calming the Hulk and shared a brief but heartfelt connection with Bruce."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Thanos beat Hulk into submission in their first encounter, triggering a crisis of confidence Bruce had to overcome."
+      }
+    ]
+  },
+  {
+    "id": "natasha-romanoff",
+    "name": "Natasha Romanoff",
+    "alias": "Black Widow",
+    "side": "hero",
+    "phaseIntroduced": 1,
+    "description": "A former Soviet assassin who sought redemption by dedicating her life to the Avengers and ultimately sacrificing it for them.",
+    "avatarColor": "#424242",
+    "imagePath": "assets/images/characters/natasha-romanoff.jpg",
+    "movieIds": [
+      "iron-man-2-2010",
+      "avengers-2012",
+      "captain-america-winter-soldier-2014",
+      "avengers-age-of-ultron-2015",
+      "captain-america-civil-war-2016",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "black-widow-2021"
+    ],
+    "connections": [
+      {
+        "characterId": "clint-barton",
+        "relationshipType": "ally",
+        "description": "Clint spared Natasha's life when he was sent to kill her, forging the MCU's most unbreakable bond of loyalty."
+      },
+      {
+        "characterId": "nick-fury",
+        "relationshipType": "mentor",
+        "description": "Fury recruited Natasha into S.H.I.E.L.D. and shaped her transformation from assassin to Avenger."
+      },
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "ally",
+        "description": "Steve and Natasha became each other's most reliable partners during their most dangerous missions together."
+      },
+      {
+        "characterId": "yelena-belova",
+        "relationshipType": "family",
+        "description": "Yelena and Natasha grew up as surrogate sisters in the Red Room and were reunited to dismantle the program together."
+      }
+    ]
+  },
+  {
+    "id": "clint-barton",
+    "name": "Clint Barton",
+    "alias": "Hawkeye",
+    "side": "hero",
+    "phaseIntroduced": 1,
+    "description": "An ordinary man with extraordinary aim who fought alongside gods and remained the Avengers' indispensable human heart.",
+    "avatarColor": "#6d4c41",
+    "imagePath": "assets/images/characters/clint-barton.jpg",
+    "movieIds": [
+      "thor-2011",
+      "avengers-2012",
+      "avengers-age-of-ultron-2015",
+      "captain-america-civil-war-2016",
+      "avengers-endgame-2019"
+    ],
+    "connections": [
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Natasha was Clint's closest friend and their relationship culminated in a heartbreaking sacrifice neither could accept."
+      },
+      {
+        "characterId": "nick-fury",
+        "relationshipType": "mentor",
+        "description": "Fury trusted Clint as one of S.H.I.E.L.D.'s most reliable field agents long before the Avengers formed."
+      },
+      {
+        "characterId": "kate-bishop",
+        "relationshipType": "mentor",
+        "description": "Clint reluctantly took Kate under his wing and passed on the Hawkeye mantle to a new generation."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "ally",
+        "description": "Clint and Tony fought together as core Avengers, with Clint often grounding the team's more volatile personalities."
+      }
+    ]
+  },
+  {
+    "id": "nick-fury",
+    "name": "Nick Fury",
+    "side": "neutral",
+    "phaseIntroduced": 1,
+    "description": "The one-eyed spy who assembled Earth's mightiest heroes and kept the world from falling apart through sheer force of will.",
+    "avatarColor": "#212121",
+    "imagePath": "assets/images/characters/nick-fury.jpg",
+    "movieIds": [
+      "iron-man-2008",
+      "iron-man-2-2010",
+      "thor-2011",
+      "captain-america-first-avenger-2011",
+      "avengers-2012",
+      "captain-america-winter-soldier-2014",
+      "avengers-age-of-ultron-2015",
+      "avengers-infinity-war-2018",
+      "captain-marvel-2019",
+      "spider-man-far-from-home-2019"
+    ],
+    "connections": [
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "mentor",
+        "description": "Fury recognised Tony's potential first and leveraged his ego to build the foundation of the Avengers Initiative."
+      },
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Fury shaped Natasha from a weapon into an agent, and she remained his most trusted operative."
+      },
+      {
+        "characterId": "carol-danvers",
+        "relationshipType": "ally",
+        "description": "Fury met Carol in the 1990s and their partnership inspired him to believe humanity was worth protecting."
+      },
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "ally",
+        "description": "Fury helped bring Steve into the modern world and counted on him as the moral compass of the Avengers."
+      }
+    ]
+  },
+  {
+    "id": "loki",
+    "name": "Loki",
+    "alias": "God of Mischief",
+    "side": "villain",
+    "phaseIntroduced": 1,
+    "description": "A trickster god consumed by jealousy and a desperate need to belong who died a hero after a lifetime of deceit.",
+    "avatarColor": "#4a148c",
+    "imagePath": "assets/images/characters/loki.jpg",
+    "movieIds": [
+      "thor-2011",
+      "avengers-2012",
+      "thor-dark-world-2013",
+      "thor-ragnarok-2017",
+      "avengers-infinity-war-2018"
+    ],
+    "connections": [
+      {
+        "characterId": "thor-odinson",
+        "relationshipType": "family",
+        "description": "Thor's adoptive brother whose rivalry and eventual reconciliation formed the emotional spine of the Asgardian saga."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Loki served Thanos out of fear and was ultimately killed by the Mad Titan when he attempted defiance."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "enemy",
+        "description": "Tony faced Loki's invasion of New York and their confrontation set the stage for Tony's greatest fears."
+      },
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "enemy",
+        "description": "Steve captured Loki during the Battle of New York, representing everything Loki despised about selfless virtue."
+      }
+    ]
+  },
+  {
+    "id": "thanos",
+    "name": "Thanos",
+    "alias": "The Mad Titan",
+    "side": "villain",
+    "phaseIntroduced": 3,
+    "description": "A nihilistic titan who believed wiping out half of all life was an act of mercy, not malice.",
+    "avatarColor": "#4e2d6c",
+    "imagePath": "assets/images/characters/thanos.jpg",
+    "movieIds": [
+      "avengers-age-of-ultron-2015",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019"
+    ],
+    "connections": [
+      {
+        "characterId": "gamora",
+        "relationshipType": "family",
+        "description": "Thanos claimed to love Gamora above all else yet sacrificed her without hesitation to obtain the Soul Stone."
+      },
+      {
+        "characterId": "nebula",
+        "relationshipType": "family",
+        "description": "Thanos treated Nebula as a tool to be modified and improved, leaving her scarred physically and emotionally."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "enemy",
+        "description": "Thanos recognised Tony as his greatest mortal adversary and granted him a painful death rather than erasure."
+      },
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "enemy",
+        "description": "Steve refused to yield even when facing Thanos alone, embodying the will that ultimately helped undo his plan."
+      },
+      {
+        "characterId": "thor-odinson",
+        "relationshipType": "enemy",
+        "description": "Thanos slaughtered Loki and half of Asgard's survivors, making Thor's quest for vengeance deeply personal."
+      }
+    ]
+  },
+  {
+    "id": "peter-parker",
+    "name": "Peter Parker",
+    "alias": "Spider-Man",
+    "side": "hero",
+    "phaseIntroduced": 3,
+    "description": "A teenage genius bitten by a radioactive spider who learned the hardest lesson of heroism - that great power demands great sacrifice.",
+    "avatarColor": "#c62828",
+    "imagePath": "assets/images/characters/peter-parker.jpg",
+    "movieIds": [
+      "captain-america-civil-war-2016",
+      "spider-man-homecoming-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "spider-man-far-from-home-2019",
+      "spider-man-no-way-home-2021"
+    ],
+    "connections": [
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "mentor",
+        "description": "Tony recruited Peter, equipped him with cutting-edge suits, and became the mentor whose legacy Peter could never escape."
+      },
+      {
+        "characterId": "stephen-strange",
+        "relationshipType": "ally",
+        "description": "Strange and Peter's attempt to erase the world's memory of Spider-Man opened the multiverse with catastrophic consequences."
+      },
+      {
+        "characterId": "nick-fury",
+        "relationshipType": "ally",
+        "description": "Fury enlisted Peter on a European mission, thrusting him into global threats before he was truly ready."
+      }
+    ]
+  },
+  {
+    "id": "stephen-strange",
+    "name": "Stephen Strange",
+    "alias": "Doctor Strange",
+    "side": "hero",
+    "phaseIntroduced": 3,
+    "description": "An arrogant surgeon who lost the use of his hands and discovered a new purpose as the Sorcerer Supreme protecting reality itself.",
+    "avatarColor": "#1a237e",
+    "imagePath": "assets/images/characters/stephen-strange.jpg",
+    "movieIds": [
+      "doctor-strange-2016",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "spider-man-no-way-home-2021",
+      "doctor-strange-multiverse-of-madness-2022"
+    ],
+    "connections": [
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "ally",
+        "description": "Strange and Tony clashed in ego but worked in concert, with Strange seeing the one future where Tony's sacrifice mattered."
+      },
+      {
+        "characterId": "peter-parker",
+        "relationshipType": "ally",
+        "description": "Strange's attempt to help Peter ended in multiverse chaos, forcing both of them to pay enormous personal costs."
+      },
+      {
+        "characterId": "wanda-maximoff",
+        "relationshipType": "enemy",
+        "description": "Strange stood as the last barrier against Wanda's multiverse rampage driven by grief and the Darkhold's corruption."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Strange viewed fourteen million possible futures and surrendered the Time Stone having seen the one path to victory."
+      }
+    ]
+  },
+  {
+    "id": "tchalla",
+    "name": "T'Challa",
+    "alias": "Black Panther",
+    "side": "hero",
+    "phaseIntroduced": 3,
+    "description": "A king who bore the double burden of a nation and a superhero mantle, evolving from isolationism to opening Wakanda to the world.",
+    "avatarColor": "#6a1b9a",
+    "imagePath": "assets/images/characters/tchalla.jpg",
+    "movieIds": [
+      "captain-america-civil-war-2016",
+      "black-panther-2018",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "black-panther-wakanda-forever-2022"
+    ],
+    "connections": [
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "ally",
+        "description": "T'Challa offered Wakanda as refuge for Steve's fugitive allies and opened his nation's borders when it mattered most."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "rival",
+        "description": "T'Challa and Tony were ideological counterparts on opposite sides of the Sokovia Accords debate."
+      },
+      {
+        "characterId": "bucky-barnes",
+        "relationshipType": "ally",
+        "description": "After nearly killing Bucky in vengeance, T'Challa chose to shelter and heal him in Wakanda."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "T'Challa led Wakanda's defense during Thanos's assault and was among the first casualties of the Snap."
+      }
+    ]
+  },
+  {
+    "id": "wanda-maximoff",
+    "name": "Wanda Maximoff",
+    "alias": "Scarlet Witch",
+    "side": "neutral",
+    "phaseIntroduced": 3,
+    "description": "A grieving woman of immeasurable power whose love became a force of destruction that threatened the very fabric of the multiverse.",
+    "avatarColor": "#b71c1c",
+    "imagePath": "assets/images/characters/wanda-maximoff.jpg",
+    "movieIds": [
+      "avengers-age-of-ultron-2015",
+      "captain-america-civil-war-2016",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "doctor-strange-multiverse-of-madness-2022"
+    ],
+    "connections": [
+      {
+        "characterId": "vision",
+        "relationshipType": "family",
+        "description": "Vision and Wanda's love story was the MCU's most tragic, cut short by Thanos and the infinite grief that followed."
+      },
+      {
+        "characterId": "stephen-strange",
+        "relationshipType": "enemy",
+        "description": "Wanda turned her wrath on Strange when he blocked her path to the children she had imagined into existence."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "rival",
+        "description": "Tony's Ultron program destroyed Wanda's home and killed her brother, a wound that never fully healed."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Wanda was forced to destroy Vision to stop Thanos, only to watch Thanos reverse time and kill him anyway."
+      }
+    ]
+  },
+  {
+    "id": "vision",
+    "name": "Vision",
+    "alias": "The Vision",
+    "side": "hero",
+    "phaseIntroduced": 3,
+    "description": "A synthetic being born from an Infinity Stone and Tony's AI who pondered what it meant to be alive until Thanos ended the question.",
+    "avatarColor": "#ffd600",
+    "imagePath": "assets/images/characters/vision.jpg",
+    "movieIds": [
+      "avengers-age-of-ultron-2015",
+      "captain-america-civil-war-2016",
+      "avengers-infinity-war-2018"
+    ],
+    "connections": [
+      {
+        "characterId": "wanda-maximoff",
+        "relationshipType": "family",
+        "description": "Vision and Wanda shared an improbable love between a synthetic being and a chaos witch that transcended both their origins."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "ally",
+        "description": "Tony created Vision by uploading J.A.R.V.I.S. into a vibranium body, making him the most optimistic legacy of Stark's genius."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Thanos tore the Mind Stone from Vision's forehead, an act of casual brutality that shattered Wanda's world."
+      },
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "ally",
+        "description": "Vision stood with the Avengers as a force of measured wisdom, fighting beside Steve when ideology divided the team."
+      }
+    ]
+  },
+  {
+    "id": "scott-lang",
+    "name": "Scott Lang",
+    "alias": "Ant-Man",
+    "side": "hero",
+    "phaseIntroduced": 2,
+    "description": "A well-meaning thief who stumbled into heroism and ended up being the unlikely key to reversing Thanos's universe-altering Snap.",
+    "avatarColor": "#558b2f",
+    "imagePath": "assets/images/characters/scott-lang.jpg",
+    "movieIds": [
+      "ant-man-2015",
+      "captain-america-civil-war-2016",
+      "avengers-endgame-2019",
+      "ant-man-quantumania-2023"
+    ],
+    "connections": [
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "ally",
+        "description": "Scott's quantum realm discovery gave Tony the missing piece needed to engineer the time heist that saved the universe."
+      },
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "ally",
+        "description": "Steve welcomed Scott onto Team Cap during the airport battle, putting their faith in an untested rookie."
+      },
+      {
+        "characterId": "bruce-banner",
+        "relationshipType": "ally",
+        "description": "Scott and Bruce collaborated on the theoretical physics behind quantum time travel to pull off the Avengers' last gambit."
+      }
+    ]
+  },
+  {
+    "id": "carol-danvers",
+    "name": "Carol Danvers",
+    "alias": "Captain Marvel",
+    "side": "hero",
+    "phaseIntroduced": 3,
+    "description": "A Kree-enhanced pilot who recovered her erased identity and became arguably the most powerful Avenger in the universe.",
+    "avatarColor": "#e65100",
+    "imagePath": "assets/images/characters/carol-danvers.jpg",
+    "movieIds": [
+      "captain-marvel-2019",
+      "avengers-endgame-2019",
+      "the-marvels-2023"
+    ],
+    "connections": [
+      {
+        "characterId": "nick-fury",
+        "relationshipType": "ally",
+        "description": "Fury's entire worldview was transformed by his 1990s partnership with Carol, inspiring him to build the Avengers Initiative."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "ally",
+        "description": "Carol rescued Tony and Nebula from deep space, making her arrival the turning point that kept the Avengers alive."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Carol stood as one of the few beings powerful enough to physically overpower Thanos without an Infinity Gauntlet."
+      }
+    ]
+  },
+  {
+    "id": "sam-wilson",
+    "name": "Sam Wilson",
+    "alias": "Falcon / Captain America",
+    "side": "hero",
+    "phaseIntroduced": 3,
+    "description": "A veteran and counsellor who partnered with Steve Rogers, fought for the world's future, and earned the right to carry the shield.",
+    "avatarColor": "#1b5e20",
+    "imagePath": "assets/images/characters/sam-wilson.jpg",
+    "movieIds": [
+      "captain-america-winter-soldier-2014",
+      "avengers-age-of-ultron-2015",
+      "captain-america-civil-war-2016",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "captain-america-brave-new-world-2025"
+    ],
+    "connections": [
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "ally",
+        "description": "Steve trusted Sam above all others and ultimately chose him as the person worthy of becoming the next Captain America."
+      },
+      {
+        "characterId": "bucky-barnes",
+        "relationshipType": "rival",
+        "description": "Sam and Bucky had a prickly, competitive friendship, both bound together by their loyalty to Steve Rogers."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "rival",
+        "description": "Sam stood firmly on Steve's side during the Accords conflict, putting him at odds with Tony's faction."
+      },
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Sam and Natasha fought together as teammates, sharing the camaraderie of being the human core of the Avengers."
+      }
+    ]
+  },
+  {
+    "id": "bucky-barnes",
+    "name": "Bucky Barnes",
+    "alias": "Winter Soldier",
+    "side": "neutral",
+    "phaseIntroduced": 1,
+    "description": "Steve Rogers's wartime best friend who was brainwashed into an assassin and spent decades reclaiming the man beneath the programming.",
+    "avatarColor": "#37474f",
+    "imagePath": "assets/images/characters/bucky-barnes.jpg",
+    "movieIds": [
+      "captain-america-first-avenger-2011",
+      "captain-america-winter-soldier-2014",
+      "captain-america-civil-war-2016",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019"
+    ],
+    "connections": [
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "family",
+        "description": "Steve refused to give up on Bucky even when the whole world branded him a monster, anchoring Bucky's recovery."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "enemy",
+        "description": "Bucky killed Tony's parents while under HYDRA's control, a revelation that shattered the Avengers from within."
+      },
+      {
+        "characterId": "sam-wilson",
+        "relationshipType": "rival",
+        "description": "Bucky and Sam's constant bickering masked a deep bond as the two men who loved Steve Rogers most."
+      },
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Natasha crossed paths with the Winter Soldier during her Red Room days, a history that shadowed both of them."
+      }
+    ]
+  },
+  {
+    "id": "peter-quill",
+    "name": "Peter Quill",
+    "alias": "Star-Lord",
+    "side": "hero",
+    "phaseIntroduced": 2,
+    "description": "A half-human outlaw raised among thieves who channelled his abandonment issues into leading the galaxy's most dysfunctional family.",
+    "avatarColor": "#e64a19",
+    "imagePath": "assets/images/characters/peter-quill.jpg",
+    "movieIds": [
+      "guardians-of-the-galaxy-2014",
+      "guardians-of-the-galaxy-vol2-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "guardians-of-the-galaxy-vol3-2023"
+    ],
+    "connections": [
+      {
+        "characterId": "gamora",
+        "relationshipType": "family",
+        "description": "Gamora was the love of Peter's life, and her death on Vormir left a wound that no amount of mixtapes could heal."
+      },
+      {
+        "characterId": "rocket-raccoon",
+        "relationshipType": "ally",
+        "description": "Rocket was Peter's most constant Guardian companion, hiding deep loyalty beneath an armour of sarcasm and anger."
+      },
+      {
+        "characterId": "groot",
+        "relationshipType": "ally",
+        "description": "Groot's simple unconditional friendship became the moral centre that held the Guardians together."
+      },
+      {
+        "characterId": "drax",
+        "relationshipType": "ally",
+        "description": "Drax's blunt honesty and ferocious loyalty made him one of the most dependable Guardians despite his lack of subtlety."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Thanos killed Gamora and Peter's emotional collapse on Titan cost the Avengers their best chance at stopping the Snap."
+      }
+    ]
+  },
+  {
+    "id": "gamora",
+    "name": "Gamora",
+    "side": "neutral",
+    "phaseIntroduced": 2,
+    "description": "Thanos's adopted daughter who escaped his shadow, found family among the Guardians, and sacrificed everything for the greater good.",
+    "avatarColor": "#2e7d32",
+    "imagePath": "assets/images/characters/gamora.jpg",
+    "movieIds": [
+      "guardians-of-the-galaxy-2014",
+      "guardians-of-the-galaxy-vol2-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "guardians-of-the-galaxy-vol3-2023"
+    ],
+    "connections": [
+      {
+        "characterId": "peter-quill",
+        "relationshipType": "family",
+        "description": "Peter became Gamora's first real home, a love story complicated across timelines and the weight of the universe."
+      },
+      {
+        "characterId": "nebula",
+        "relationshipType": "family",
+        "description": "Gamora and Nebula's sisterhood was forged in Thanos's cruelty and eventually healed through hard-won understanding."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "family",
+        "description": "Thanos raised Gamora as his favourite weapon, and she spent her life defining herself against everything he stood for."
+      },
+      {
+        "characterId": "drax",
+        "relationshipType": "ally",
+        "description": "Drax initially blamed Gamora for Thanos's crimes but came to respect and protect her as a Guardian."
+      }
+    ]
+  },
+  {
+    "id": "nebula",
+    "name": "Nebula",
+    "side": "neutral",
+    "phaseIntroduced": 2,
+    "description": "Thanos's cybernetically tortured daughter who converted hatred into heroism and finally found the sister she never dared to love.",
+    "avatarColor": "#1a237e",
+    "imagePath": "assets/images/characters/nebula.jpg",
+    "movieIds": [
+      "guardians-of-the-galaxy-2014",
+      "guardians-of-the-galaxy-vol2-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "guardians-of-the-galaxy-vol3-2023"
+    ],
+    "connections": [
+      {
+        "characterId": "gamora",
+        "relationshipType": "family",
+        "description": "Nebula spent years hating Gamora for winning Thanos's approval, only to realise she had always wanted a sister."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "family",
+        "description": "Every upgrade Thanos forced on Nebula's body was a reminder that she was never enough, fuelling her eventual defiance."
+      },
+      {
+        "characterId": "peter-quill",
+        "relationshipType": "ally",
+        "description": "Nebula grudgingly became a Guardian, growing from antagonist to trusted companion through shared loss."
+      },
+      {
+        "characterId": "tony-stark",
+        "relationshipType": "ally",
+        "description": "Nebula and Tony were stranded together in space after Infinity War, building an unlikely bond on the journey home."
+      }
+    ]
+  },
+  {
+    "id": "rocket-raccoon",
+    "name": "Rocket Raccoon",
+    "side": "hero",
+    "phaseIntroduced": 2,
+    "description": "A genetically engineered raccoon-like creature who masked profound trauma behind weapons obsession until his true origins were revealed.",
+    "avatarColor": "#795548",
+    "imagePath": "assets/images/characters/rocket-raccoon.jpg",
+    "movieIds": [
+      "guardians-of-the-galaxy-2014",
+      "guardians-of-the-galaxy-vol2-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "thor-love-and-thunder-2022",
+      "guardians-of-the-galaxy-vol3-2023"
+    ],
+    "connections": [
+      {
+        "characterId": "groot",
+        "relationshipType": "family",
+        "description": "Groot is the only constant in Rocket's life, the bond between them deeper than any relationship Rocket will admit to."
+      },
+      {
+        "characterId": "peter-quill",
+        "relationshipType": "ally",
+        "description": "Peter gave Rocket the first real crew that ever felt like home, even if Rocket would never say so."
+      },
+      {
+        "characterId": "gamora",
+        "relationshipType": "ally",
+        "description": "Gamora's calm and moral clarity complemented Rocket's chaos and provided the Guardians with steady leadership."
+      },
+      {
+        "characterId": "nebula",
+        "relationshipType": "ally",
+        "description": "Rocket and Nebula became unlikely allies and genuine friends, both survivors who learned to accept their scars."
+      }
+    ]
+  },
+  {
+    "id": "groot",
+    "name": "Groot",
+    "alias": "I Am Groot",
+    "side": "hero",
+    "phaseIntroduced": 2,
+    "description": "A tree-like being of few audible words but infinite heart who sacrificed himself for his friends and grew back even stronger.",
+    "avatarColor": "#558b2f",
+    "imagePath": "assets/images/characters/groot.jpg",
+    "movieIds": [
+      "guardians-of-the-galaxy-2014",
+      "guardians-of-the-galaxy-vol2-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "guardians-of-the-galaxy-vol3-2023"
+    ],
+    "connections": [
+      {
+        "characterId": "rocket-raccoon",
+        "relationshipType": "family",
+        "description": "Rocket is the person Groot loves most in the universe, a bond sealed when Groot sacrificed himself to save the team."
+      },
+      {
+        "characterId": "peter-quill",
+        "relationshipType": "ally",
+        "description": "Peter welcomed Groot into the Guardians and their adventures became the defining story of Groot's many lives."
+      },
+      {
+        "characterId": "gamora",
+        "relationshipType": "ally",
+        "description": "Groot's gentle nature made him and Gamora natural allies, both beings defined by their capacity for compassion."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Groot fought alongside the Avengers at the Battle of Wakanda and was erased in the Snap alongside half the universe."
+      }
+    ]
+  },
+  {
+    "id": "drax",
+    "name": "Drax",
+    "alias": "Drax the Destroyer",
+    "side": "hero",
+    "phaseIntroduced": 2,
+    "description": "A warrior driven by vengeance for his murdered family who found unexpected joy and purpose in the Guardians of the Galaxy.",
+    "avatarColor": "#37474f",
+    "imagePath": "assets/images/characters/drax.jpg",
+    "movieIds": [
+      "guardians-of-the-galaxy-2014",
+      "guardians-of-the-galaxy-vol2-2017",
+      "avengers-infinity-war-2018",
+      "avengers-endgame-2019",
+      "guardians-of-the-galaxy-vol3-2023"
+    ],
+    "connections": [
+      {
+        "characterId": "peter-quill",
+        "relationshipType": "ally",
+        "description": "Peter earned Drax's complete loyalty, and Drax's literal honesty provided some of the Guardians' most memorable moments."
+      },
+      {
+        "characterId": "gamora",
+        "relationshipType": "ally",
+        "description": "Drax grew to trust and protect Gamora despite initially blaming her for the crimes of Thanos."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Thanos killed Drax's wife and daughter, and destroying him became the obsessive purpose that defined Drax's life."
+      },
+      {
+        "characterId": "rocket-raccoon",
+        "relationshipType": "ally",
+        "description": "Drax and Rocket's bickering dynamic masked genuine affection, each pushing the other to be more than their worst impulses."
+      }
+    ]
+  },
+  {
+    "id": "shang-chi",
+    "name": "Shang-Chi",
+    "alias": "Master of the Ten Rings",
+    "side": "hero",
+    "phaseIntroduced": 4,
+    "description": "A young man who fled his father's criminal empire only to be drawn back and forced to reckon with his deadly inheritance.",
+    "avatarColor": "#c62828",
+    "imagePath": "assets/images/characters/shang-chi.jpg",
+    "movieIds": [
+      "shang-chi-2021"
+    ],
+    "connections": [
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Shang-Chi was introduced to the broader Avengers network in the aftermath of the Blip, connecting with Natasha's legacy."
+      },
+      {
+        "characterId": "nick-fury",
+        "relationshipType": "ally",
+        "description": "Fury monitored Shang-Chi's emergence as a power-level threat and potential asset after he claimed the Ten Rings."
+      },
+      {
+        "characterId": "bruce-banner",
+        "relationshipType": "ally",
+        "description": "Bruce Banner was among the Avengers who evaluated Shang-Chi after the events in San Francisco and Ta Lo."
+      }
+    ]
+  },
+  {
+    "id": "yelena-belova",
+    "name": "Yelena Belova",
+    "alias": "Black Widow II",
+    "side": "neutral",
+    "phaseIntroduced": 4,
+    "description": "A Black Widow operative freed from mind control who channels grief over Natasha's death into an increasingly complicated heroism.",
+    "avatarColor": "#546e7a",
+    "imagePath": "assets/images/characters/yelena-belova.jpg",
+    "movieIds": [
+      "black-widow-2021",
+      "thunderbolts-2025"
+    ],
+    "connections": [
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "family",
+        "description": "Natasha was Yelena's surrogate sister, and the loss of her became the wound at the centre of Yelena's fractured purpose."
+      },
+      {
+        "characterId": "clint-barton",
+        "relationshipType": "rival",
+        "description": "Yelena blamed Clint for Natasha's death and hunted him before learning the full truth of what happened on Vormir."
+      },
+      {
+        "characterId": "sam-wilson",
+        "relationshipType": "ally",
+        "description": "Yelena worked alongside Sam as part of the Thunderbolts, two morally complicated heroes navigating a grey world."
+      }
+    ]
+  },
+  {
+    "id": "kate-bishop",
+    "name": "Kate Bishop",
+    "alias": "Hawkeye II",
+    "side": "hero",
+    "phaseIntroduced": 4,
+    "description": "A prodigious archer who idolised Hawkeye since the Battle of New York and fought to prove she was worthy of the name.",
+    "avatarColor": "#7e57c2",
+    "imagePath": "assets/images/characters/kate-bishop.jpg",
+    "movieIds": [
+      "thunderbolts-2025"
+    ],
+    "connections": [
+      {
+        "characterId": "clint-barton",
+        "relationshipType": "mentor",
+        "description": "Clint became Kate's reluctant mentor after she stumbled into his world, eventually accepting her as his true successor."
+      },
+      {
+        "characterId": "natasha-romanoff",
+        "relationshipType": "ally",
+        "description": "Kate carries on the spirit of Natasha's sacrifice by upholding the values Natasha embodied as an Avenger."
+      },
+      {
+        "characterId": "yelena-belova",
+        "relationshipType": "rival",
+        "description": "Yelena and Kate clashed violently before eventually finding an uneasy mutual respect as two women in legacy roles."
+      }
+    ]
+  },
+  {
+    "id": "deadpool",
+    "name": "Deadpool",
+    "alias": "Merc with a Mouth",
+    "side": "neutral",
+    "phaseIntroduced": 5,
+    "description": "An irreverent mercenary granted healing factor powers and a broken fourth wall who crashed into the MCU carrying the weight of a dying universe.",
+    "avatarColor": "#c62828",
+    "imagePath": "assets/images/characters/deadpool.jpg",
+    "movieIds": [
+      "deadpool-and-wolverine-2024"
+    ],
+    "connections": [
+      {
+        "characterId": "wolverine",
+        "relationshipType": "ally",
+        "description": "Wade and Logan's chaotic partnership was built on mutual antagonism that disguised a genuine bond forged in the void."
+      },
+      {
+        "characterId": "nick-fury",
+        "relationshipType": "ally",
+        "description": "The TVA served as Deadpool's unlikely gateway into the MCU, connecting him to the broader infrastructure of heroes."
+      },
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "ally",
+        "description": "Deadpool's reverence for Captain America borders on obsession, making Steve the ideological north star of Wade's worldview."
+      }
+    ]
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "alias": "Logan",
+    "side": "neutral",
+    "phaseIntroduced": 5,
+    "description": "A centuries-old mutant with regenerative powers and adamantium claws who found in Deadpool's chaos a reason to be a hero again.",
+    "avatarColor": "#ffc107",
+    "imagePath": "assets/images/characters/wolverine.jpg",
+    "movieIds": [
+      "deadpool-and-wolverine-2024"
+    ],
+    "connections": [
+      {
+        "characterId": "deadpool",
+        "relationshipType": "ally",
+        "description": "Logan reluctantly teamed with Wade to save a universe that was not his own, discovering a last reason to care."
+      },
+      {
+        "characterId": "steve-rogers",
+        "relationshipType": "ally",
+        "description": "Logan and Steve share a wartime past that makes them spiritual counterparts - both soldiers out of time carrying old wounds."
+      },
+      {
+        "characterId": "thanos",
+        "relationshipType": "enemy",
+        "description": "Logan's adamantium claws and healing factor make him one of the few beings who could survive a direct confrontation with Thanos."
+      }
+    ]
+  }
+]

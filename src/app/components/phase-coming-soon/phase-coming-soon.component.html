@@ -1,0 +1,18 @@
+@if (comingSoon) {
+  <section class="coming-soon-section">
+    <div class="cs-header">
+      <div class="cs-badge">COMING SOON</div>
+      <h2 class="cs-title">{{ comingSoon.name }}</h2>
+      <p class="cs-tagline">{{ comingSoon.tagline }}</p>
+    </div>
+    <div class="cs-movies">
+      @for (movie of comingSoon.movies; track movie.title) {
+        <div class="cs-movie" [class]="'status-' + movie.status">
+          <span class="cs-movie-title">{{ movie.title }}</span>
+          <span class="cs-movie-year">{{ movie.year }}</span>
+          <span class="cs-status-badge">{{ movie.status }}</span>
+        </div>
+      }
+    </div>
+  </section>
+}

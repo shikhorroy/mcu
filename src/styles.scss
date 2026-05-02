@@ -1,0 +1,39 @@
+@use 'breakpoints' as *;
+@use 'mixins' as *;
+@use 'animations';
+
+:root {
+  --color-bg-primary: #0a0a0f;
+  --color-bg-secondary: #12121a;
+  --color-bg-card: #1a1a2e;
+  --color-accent-gold: #c9a84c;
+  --color-accent-red: #e23636;
+  --color-accent-blue: #4fc3f7;
+  --color-text-primary: #f0e6d3;
+  --color-text-secondary: #9e9e9e;
+  --color-text-muted: #5a5a6a;
+  --phase-1: #4fc3f7;
+  --phase-2: #66bb6a;
+  --phase-3: #c9a84c;
+  --phase-4: #ab47bc;
+  --phase-5: #e23636;
+  --phase-6: #ff7043;
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --nav-height: 64px;
+  --nav-height-mobile: 56px;
+  --section-padding: 4rem 2rem;
+  --section-padding-tablet: 3rem 1.5rem;
+  --section-padding-mobile: 2rem 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+* { box-sizing: border-box; }

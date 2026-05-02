@@ -1,0 +1,98 @@
+<!-- Scroll progress bar -->
+<div class="scroll-progress-bar">
+  <div class="scroll-progress-fill" [style.width.%]="scrollProgress() * 100" [style.background]="progressGradient"></div>
+</div>
+
+<!-- Starfield background -->
+<app-starfield />
+
+<!-- Fixed nav -->
+<app-nav
+  (openJourney)="showJourney.set(true)"
+  (openSearch)="showSearch.set(true)"
+/>
+
+<!-- Phase jump dots sidebar -->
+<div class="phase-jump-sidebar" aria-label="Phase navigation">
+  @for (phase of phaseNumbers; track phase) {
+    <button
+      class="jump-dot"
+      [style.--phase-color]="'var(--phase-' + phase + ')'"
+      (click)="scrollToPhase(phase)"
+      [attr.aria-label]="'Jump to Phase ' + phase"
+      [attr.title]="'Phase ' + phase"
+    ></button>
+  }
+</div>
+
+<!-- Main scroll container -->
+<main class="scroll-container">
+  <app-hero-section />
+
+  @for (phase of phases(); track phase.id; let i = $index) {
+    @if (i > 0) {
+      <app-story-transition [fromPhase]="phases()[i - 1].id" [toPhase]="phase.id" />
+    }
+
+    @if (phase.id === 4 && i > 0) {
+      @defer (on viewport) {
+        <app-infinity-stones />
+      } @placeholder {
+        <div style="height:80px"></div>
+      }
+      @defer (on viewport) {
+        <app-character-graph
+          [characters]="allChars()"
+          (onCharacterClick)="openCharacter($event)"
+        />
+      } @placeholder {
+        <div style="height:400px;background:rgba(255,255,255,0.01)"></div>
+      }
+    }
+
+    <app-phase-section
+      [phase]="phase"
+      (onMovieClick)="openMovie($event)"
+      (onCharacterClick)="openCharacter($event)"
+    />
+  }
+
+  <app-phase-coming-soon />
+  <app-footer />
+</main>
+
+<!-- Movie detail panel -->
+@if (selectedMovie()) {
+  <app-movie-detail
+    [movie]="selectedMovie()"
+    (onClose)="closeMovie()"
+    (onCharacterClick)="openCharacter($event)"
+    (onNavigate)="openMovie($event)"
+  />
+}
+
+<!-- Character detail panel -->
+@if (selectedChar()) {
+  <app-character-detail-panel
+    [character]="selectedChar()"
+    (onClose)="closeChar()"
+    (onMovieClick)="openCharacter($event)"
+  />
+}
+
+<!-- My Journey panel -->
+@if (showJourney()) {
+  <app-my-journey-panel
+    (onClose)="showJourney.set(false)"
+    (onScrollToPhase)="scrollToPhase($event)"
+  />
+}
+
+<!-- Search overlay -->
+@if (showSearch()) {
+  <app-search-overlay
+    (onClose)="showSearch.set(false)"
+    (onMovieSelected)="onMovieSelectedFromSearch($event)"
+    (onCharacterSelected)="openCharacter($event)"
+  />
+}

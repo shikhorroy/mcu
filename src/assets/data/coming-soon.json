@@ -1,0 +1,12 @@
+{
+  "id": 6,
+  "name": "Phase 6",
+  "status": "upcoming",
+  "tagline": "The Multiverse Saga concludes.",
+  "movies": [
+    { "title": "The Fantastic Four: First Steps", "year": 2025, "status": "released" },
+    { "title": "Spider-Man: Brand New Day", "year": 2026, "status": "announced" },
+    { "title": "Avengers: Doomsday", "year": 2026, "status": "filming" },
+    { "title": "Avengers: Secret Wars", "year": 2027, "status": "announced" }
+  ]
+}

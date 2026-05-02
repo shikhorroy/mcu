@@ -1,0 +1,2315 @@
+[
+  {
+    "id": 1,
+    "name": "The Avengers Initiative",
+    "sagaName": "Infinity Saga",
+    "tagline": "The heroes assemble for the first time",
+    "colorVar": "--phase-1",
+    "yearRange": "2008-2012",
+    "totalMovies": 6,
+    "movies": [
+      {
+        "id": "iron-man-2008",
+        "title": "Iron Man",
+        "year": 2008,
+        "phase": 1,
+        "synopsis": "Billionaire weapons manufacturer Tony Stark is captured by terrorists and forced to build a weapon, instead constructing a powered suit of armor to escape. Back home, he refines the suit and becomes Iron Man, a armored hero protecting the world.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "iron-man-origin",
+            "title": "Tony Stark Becomes Iron Man",
+            "description": "Captured in Afghanistan, Tony Stark builds the first Iron Man suit in a cave to escape captivity. This moment marks the birth of the MCU's first superhero.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "arc-reactor-creation",
+            "title": "Arc Reactor Development",
+            "description": "Tony miniaturizes the arc reactor to power his suit and keep the shrapnel from reaching his heart. This technology becomes the cornerstone of Stark Industries' future.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "iron-monger-battle",
+            "title": "Battle Against Iron Monger",
+            "description": "Tony confronts Obadiah Stane, who has stolen his technology to create the Iron Monger suit. Tony defeats him at great personal cost.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "im-identity-reveal",
+            "title": "Tony Stark Reveals His Identity",
+            "description": "At a press conference, Tony Stark shocks the world by announcing 'I am Iron Man', abandoning the secret identity convention. This sets the tone for a new era of public superheroes.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "nick-fury"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "tony-stark",
+          "nick-fury",
+          "natasha-romanoff",
+          "clint-barton"
+        ],
+        "charactersAppearing": [
+          "tony-stark",
+          "nick-fury"
+        ],
+        "posterGradient": "linear-gradient(135deg, #7f0000, #ff6f00)",
+        "imagePath": "assets/images/movies/iron-man-2008.jpg"
+      },
+      {
+        "id": "incredible-hulk-2008",
+        "title": "The Incredible Hulk",
+        "year": 2008,
+        "phase": 1,
+        "synopsis": "Bruce Banner, a scientist exposed to gamma radiation, is hunted by the U.S. military while searching for a cure to his condition that transforms him into a massive green creature known as the Hulk. He must confront the monstrous Abomination to protect those he loves.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "hulk-origin-recap",
+            "title": "Banner's Gamma Accident",
+            "description": "Bruce Banner recalls his gamma radiation experiment that turned him into the Hulk. He now lives in hiding, trying to control his condition.",
+            "significance": "high",
+            "charactersInvolved": [
+              "bruce-banner"
+            ]
+          },
+          {
+            "id": "super-soldier-experiment",
+            "title": "Blonsky Becomes Abomination",
+            "description": "Soldier Emil Blonsky injects himself with gamma-irradiated blood to become the monstrous Abomination. This creates a threat that only the Hulk can stop.",
+            "significance": "high",
+            "charactersInvolved": [
+              "bruce-banner"
+            ]
+          },
+          {
+            "id": "hulk-vs-abomination",
+            "title": "Hulk vs. Abomination in Harlem",
+            "description": "The Hulk battles the Abomination through the streets of New York City. Banner chooses to embrace the Hulk to save innocent lives.",
+            "significance": "high",
+            "charactersInvolved": [
+              "bruce-banner"
+            ]
+          },
+          {
+            "id": "stark-cameo",
+            "title": "Tony Stark's Cameo",
+            "description": "Tony Stark appears to speak with General Ross about assembling a team. This brief moment connects the Hulk's story to the larger MCU.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "tony-stark",
+              "bruce-banner"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "bruce-banner"
+        ],
+        "charactersAppearing": [
+          "bruce-banner",
+          "tony-stark"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1b5e20, #76ff03)",
+        "imagePath": "assets/images/movies/incredible-hulk-2008.jpg"
+      },
+      {
+        "id": "iron-man-2-2010",
+        "title": "Iron Man 2",
+        "year": 2010,
+        "phase": 1,
+        "synopsis": "Tony Stark faces dual threats as the palladium in his arc reactor slowly poisons him and a vengeful Russian physicist named Ivan Vanko seeks his destruction. Meanwhile, Nick Fury recruits Tony into the Avengers Initiative.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "nick-fury-recruitment",
+            "title": "Nick Fury Approaches Tony",
+            "description": "Nick Fury reveals the Avengers Initiative to a dying Tony Stark and provides a hidden message from his father that saves his life. S.H.I.E.L.D. steps into Tony's world.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "nick-fury",
+              "natasha-romanoff"
+            ]
+          },
+          {
+            "id": "new-element-discovery",
+            "title": "Tony Creates a New Element",
+            "description": "Using clues hidden in Howard Stark's old Expo model, Tony synthesizes a new element that replaces the poisonous palladium in his arc reactor. His father's legacy saves his life.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "war-machine-debut",
+            "title": "War Machine's First Appearance",
+            "description": "James Rhodes dons Tony's Mark II armor to stop an unhinged Tony at his birthday party, becoming War Machine. This creates a second armored hero allied with S.H.I.E.L.D.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "whiplash-expo-battle",
+            "title": "Battle of Stark Expo",
+            "description": "Tony and Rhodes fight Ivan Vanko's drone army at the Stark Expo in a climactic showdown. Vanko's defeat comes at the cost of the Expo itself.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tony-stark",
+              "natasha-romanoff"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "natasha-romanoff"
+        ],
+        "charactersAppearing": [
+          "tony-stark",
+          "nick-fury",
+          "natasha-romanoff"
+        ],
+        "posterGradient": "linear-gradient(135deg, #b71c1c, #e65100)",
+        "imagePath": "assets/images/movies/iron-man-2-2010.jpg"
+      },
+      {
+        "id": "thor-2011",
+        "title": "Thor",
+        "year": 2011,
+        "phase": 1,
+        "synopsis": "The arrogant Asgardian prince Thor is stripped of his powers and banished to Earth by his father Odin after recklessly provoking a war with the Frost Giants. On Earth he must prove himself worthy while his adopted brother Loki schemes for the throne of Asgard.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "thor-banished",
+            "title": "Thor Banished to Earth",
+            "description": "Odin strips Thor of his powers and casts him to Earth, embedding Mjolnir in the New Mexico desert with an enchantment. Only the worthy can lift it.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson",
+              "loki"
+            ]
+          },
+          {
+            "id": "loki-frost-giant-reveal",
+            "title": "Loki's True Heritage Revealed",
+            "description": "Odin reveals that Loki is actually a Frost Giant foundling taken from the defeated king Laufey. This revelation shatters Loki's sense of identity and sets him on a villainous path.",
+            "significance": "high",
+            "charactersInvolved": [
+              "thor-odinson",
+              "loki"
+            ]
+          },
+          {
+            "id": "thor-worthy",
+            "title": "Thor Becomes Worthy",
+            "description": "Thor sacrifices himself to protect Jane Foster and the townspeople from the Destroyer, proving his selflessness. He reclaims Mjolnir and his full Asgardian power.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson"
+            ]
+          },
+          {
+            "id": "loki-first-villainy",
+            "title": "Loki's Betrayal and Fall",
+            "description": "Loki reveals his scheme to destroy Jotunheim to prove his worth to Odin, and ultimately lets go of Mjolnir's handle to fall into the void of space. His villainous arc officially begins.",
+            "significance": "high",
+            "charactersInvolved": [
+              "thor-odinson",
+              "loki"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "thor-odinson",
+          "loki",
+          "clint-barton"
+        ],
+        "charactersAppearing": [
+          "thor-odinson",
+          "loki",
+          "clint-barton",
+          "nick-fury"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1a237e, #b8860b)",
+        "imagePath": "assets/images/movies/thor-2011.jpg"
+      },
+      {
+        "id": "captain-america-first-avenger-2011",
+        "title": "Captain America: The First Avenger",
+        "year": 2011,
+        "phase": 1,
+        "synopsis": "Steve Rogers, a frail young man from Brooklyn, is transformed into the super-soldier Captain America during World War II to fight the forces of HYDRA led by the villainous Red Skull. His sacrifice at the end of the war sends him into a decades-long slumber beneath the Arctic ice.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "super-soldier-serum",
+            "title": "Steve Rogers Becomes Captain America",
+            "description": "The super-soldier serum transforms frail Steve Rogers into a peak-human specimen. He becomes a symbol of hope for America during the war.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "steve-rogers",
+              "bucky-barnes"
+            ]
+          },
+          {
+            "id": "tesseract-hydra",
+            "title": "Red Skull Wields the Tesseract",
+            "description": "The Red Skull uses the power of the Tesseract - the Space Stone - to create devastating weapons for HYDRA. This marks the first appearance of an Infinity Stone in the MCU.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "steve-rogers"
+            ]
+          },
+          {
+            "id": "bucky-death",
+            "title": "Bucky Barnes Falls",
+            "description": "Steve's best friend Bucky Barnes falls from a speeding train during a mission and is presumed dead. This loss haunts Steve for decades.",
+            "significance": "high",
+            "charactersInvolved": [
+              "steve-rogers",
+              "bucky-barnes"
+            ]
+          },
+          {
+            "id": "cap-frozen",
+            "title": "Captain America Crashes into the Arctic",
+            "description": "To save millions of lives, Steve Rogers pilots a HYDRA plane into the Arctic ice, sacrificing himself. He wakes up in present-day New York City, 70 years later.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "steve-rogers",
+              "nick-fury"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "steve-rogers",
+          "bucky-barnes"
+        ],
+        "charactersAppearing": [
+          "steve-rogers",
+          "bucky-barnes",
+          "nick-fury"
+        ],
+        "infinityStone": {
+          "name": "Space Stone (Tesseract)",
+          "color": "#4fc3f7",
+          "location": "Hidden in HYDRA base"
+        },
+        "posterGradient": "linear-gradient(135deg, #0d3b6e, #c8a400)",
+        "imagePath": "assets/images/movies/captain-america-first-avenger-2011.jpg"
+      },
+      {
+        "id": "avengers-2012",
+        "title": "The Avengers",
+        "year": 2012,
+        "phase": 1,
+        "synopsis": "Nick Fury assembles Earth's mightiest heroes - Iron Man, Captain America, Thor, the Hulk, Black Widow, and Hawkeye - to stop Loki from using the Tesseract to conquer Earth. The team must overcome their differences and work together to repel an alien invasion of New York City.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "avengers-assemble",
+            "title": "The Avengers Are Assembled",
+            "description": "Nick Fury activates the Avengers Initiative, bringing together Tony Stark, Steve Rogers, Thor, Bruce Banner, Natasha Romanoff, and Clint Barton. The world's first superhero team is born.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "steve-rogers",
+              "thor-odinson",
+              "bruce-banner",
+              "natasha-romanoff",
+              "clint-barton",
+              "nick-fury"
+            ]
+          },
+          {
+            "id": "loki-staff-tesseract",
+            "title": "Loki Steals the Tesseract",
+            "description": "Loki arrives through a portal opened by the Tesseract and steals it from S.H.I.E.L.D., enslaving several agents including Hawkeye with his scepter. The invasion of Earth begins.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "loki",
+              "clint-barton",
+              "nick-fury"
+            ]
+          },
+          {
+            "id": "hulk-smash-battle",
+            "title": "Hulk Joins the Battle of New York",
+            "description": "Bruce Banner transforms into the Hulk during the Battle of New York to fight the Chitauri invasion. The Hulk proves to be an unstoppable force on the battlefield.",
+            "significance": "high",
+            "charactersInvolved": [
+              "bruce-banner",
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "battle-of-new-york",
+            "title": "Battle of New York",
+            "description": "The Avengers unite to stop the Chitauri alien invasion through a portal above Stark Tower. Tony flies a nuclear missile through the portal, closing it and ending the invasion at near-fatal cost.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "steve-rogers",
+              "thor-odinson",
+              "bruce-banner",
+              "natasha-romanoff",
+              "clint-barton",
+              "loki"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "tony-stark",
+          "steve-rogers",
+          "thor-odinson",
+          "bruce-banner",
+          "natasha-romanoff",
+          "clint-barton",
+          "nick-fury",
+          "loki",
+          "thanos"
+        ],
+        "infinityStone": {
+          "name": "Space Stone (Tesseract)",
+          "color": "#4fc3f7",
+          "location": "Protected by S.H.I.E.L.D."
+        },
+        "posterGradient": "linear-gradient(135deg, #0a2463, #c62a2a)",
+        "imagePath": "assets/images/movies/avengers-2012.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Expanding the Universe",
+    "sagaName": "Infinity Saga",
+    "tagline": "The universe grows larger and more dangerous",
+    "colorVar": "--phase-2",
+    "yearRange": "2013-2015",
+    "totalMovies": 6,
+    "movies": [
+      {
+        "id": "iron-man-3-2013",
+        "title": "Iron Man 3",
+        "year": 2013,
+        "phase": 2,
+        "synopsis": "Tony Stark, suffering from PTSD after the Battle of New York, faces a new terrorist threat called the Mandarin while a dangerous biological experiment called Extremis threatens to spiral out of control. Tony must confront his fears and prove that the man makes the suit, not the other way around.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "tony-ptsd",
+            "title": "Tony's Post-Battle PTSD",
+            "description": "Tony Stark struggles with anxiety attacks and sleeplessness following the traumatic Battle of New York. His mental health crisis drives the film's personal journey.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "extremis-virus",
+            "title": "The Extremis Threat Emerges",
+            "description": "Aldrich Killian's Extremis biological enhancement creates super-powered soldiers capable of regenerating and generating extreme heat. The technology is dangerously unstable.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "stark-mansion-destroyed",
+            "title": "Stark Mansion Demolished",
+            "description": "Tony's Malibu mansion is destroyed by helicopter gunships after he publicly challenges the Mandarin. This strips Tony of his resources and forces him to improvise.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "tony-destroys-armors",
+            "title": "Tony Destroys His Suits",
+            "description": "After defeating Killian and saving Pepper, Tony has JARVIS destroy all of his Iron Man suits as a gesture of commitment. He proves he is Iron Man with or without the armor.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tony-stark"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "tony-stark"
+        ],
+        "posterGradient": "linear-gradient(135deg, #8b0000, #d4380d)",
+        "imagePath": "assets/images/movies/iron-man-3-2013.jpg"
+      },
+      {
+        "id": "thor-dark-world-2013",
+        "title": "Thor: The Dark World",
+        "year": 2013,
+        "phase": 2,
+        "synopsis": "Thor races to protect the universe as the ancient Dark Elf Malekith attempts to use a powerful weapon known as the Aether to plunge the universe into darkness during a rare cosmic event called the Convergence. Thor must turn to his imprisoned brother Loki for help.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "aether-found",
+            "title": "Jane Foster Finds the Aether",
+            "description": "Jane Foster accidentally discovers and becomes infected by the Aether, the Reality Stone in liquid form. Thor must bring her to Asgard to save her life.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson"
+            ]
+          },
+          {
+            "id": "frigga-death",
+            "title": "Frigga's Death",
+            "description": "Queen Frigga is killed protecting Jane Foster from Malekith, deeply affecting both Thor and Loki. Her death drives the brothers to form an uneasy alliance.",
+            "significance": "high",
+            "charactersInvolved": [
+              "thor-odinson",
+              "loki"
+            ]
+          },
+          {
+            "id": "loki-fakes-death",
+            "title": "Loki Appears to Sacrifice Himself",
+            "description": "Loki seemingly dies saving Thor from a dark elf, but secretly fakes his own death and impersonates Odin. He sets himself up to rule Asgard from the shadows.",
+            "significance": "high",
+            "charactersInvolved": [
+              "thor-odinson",
+              "loki"
+            ]
+          },
+          {
+            "id": "aether-to-collector",
+            "title": "Aether Given to the Collector",
+            "description": "Sif and Volstagg deliver the Aether to Taneleer Tivan, the Collector, for safekeeping after recognizing two Infinity Stones should not be near each other. The Collector's interest in the Stones hints at a larger plan.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "thor-odinson",
+          "loki"
+        ],
+        "infinityStone": {
+          "name": "Reality Stone (Aether)",
+          "color": "#e23636",
+          "location": "Collected by the Collector"
+        },
+        "posterGradient": "linear-gradient(135deg, #1c0535, #8b1a1a)",
+        "imagePath": "assets/images/movies/thor-dark-world-2013.jpg"
+      },
+      {
+        "id": "captain-america-winter-soldier-2014",
+        "title": "Captain America: The Winter Soldier",
+        "year": 2014,
+        "phase": 2,
+        "synopsis": "Steve Rogers, now working for S.H.I.E.L.D., uncovers a massive conspiracy that threatens global security and is shocked to discover that HYDRA has been secretly embedded within the organization for decades. He must also confront a ghost from his past when the mysterious assassin the Winter Soldier is revealed to be his old friend Bucky Barnes.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "hydra-shield-infiltration",
+            "title": "HYDRA Hidden Within S.H.I.E.L.D.",
+            "description": "Steve Rogers discovers that HYDRA has been secretly operating within S.H.I.E.L.D. since its founding at the end of World War II. The entire intelligence organization is compromised.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "steve-rogers",
+              "natasha-romanoff",
+              "nick-fury"
+            ]
+          },
+          {
+            "id": "winter-soldier-revealed",
+            "title": "Winter Soldier Is Bucky Barnes",
+            "description": "The mysterious Soviet assassin known as the Winter Soldier is revealed to be Steve's best friend Bucky Barnes, kept alive and brainwashed by HYDRA for decades. Steve refuses to fight his friend.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "steve-rogers",
+              "bucky-barnes"
+            ]
+          },
+          {
+            "id": "shield-dismantled",
+            "title": "S.H.I.E.L.D. Is Dismantled",
+            "description": "Steve and his allies expose HYDRA and effectively dismantle S.H.I.E.L.D. by leaking its classified files to the public. The world's primary intelligence agency is gone.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "steve-rogers",
+              "natasha-romanoff",
+              "nick-fury",
+              "sam-wilson"
+            ]
+          },
+          {
+            "id": "sam-wilson-falcon",
+            "title": "Sam Wilson Becomes Falcon",
+            "description": "Steve Rogers meets and recruits veteran Sam Wilson, who uses experimental EXO-7 Falcon wings to fight alongside him. A new hero and close ally for Captain America is born.",
+            "significance": "high",
+            "charactersInvolved": [
+              "steve-rogers",
+              "sam-wilson"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "sam-wilson"
+        ],
+        "charactersAppearing": [
+          "steve-rogers",
+          "natasha-romanoff",
+          "nick-fury",
+          "sam-wilson",
+          "bucky-barnes"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0d1b4b, #8b0000)",
+        "imagePath": "assets/images/movies/captain-america-winter-soldier-2014.jpg"
+      },
+      {
+        "id": "guardians-of-the-galaxy-2014",
+        "title": "Guardians of the Galaxy",
+        "year": 2014,
+        "phase": 2,
+        "synopsis": "A group of intergalactic misfits - a human outlaw, two deadly assassins, a warrior, and a talking raccoon and his tree companion - must band together to prevent a fanatical Kree warrior from destroying an entire planet with a powerful artifact called the Power Stone.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "guardians-form",
+            "title": "The Guardians of the Galaxy Form",
+            "description": "Peter Quill, Gamora, Rocket, Groot, and Drax unite in a prison and escape together to pursue the Power Stone. An unlikely found family is born.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-quill",
+              "gamora",
+              "rocket-raccoon",
+              "groot",
+              "drax"
+            ]
+          },
+          {
+            "id": "power-stone-revealed",
+            "title": "The Power Stone's Devastating Power",
+            "description": "The Orb is revealed to contain the Power Stone, an Infinity Stone of immense destructive energy capable of annihilating entire planets. Ronan seizes it to commit genocide.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-quill",
+              "gamora",
+              "thanos"
+            ]
+          },
+          {
+            "id": "thanos-first-proper-appearance",
+            "title": "Thanos Revealed as the True Villain",
+            "description": "Thanos is revealed as the shadowy power behind Ronan's crusade and Gamora's true master. His quest for the Infinity Stones is hinted at for the first time.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thanos",
+              "gamora",
+              "nebula"
+            ]
+          },
+          {
+            "id": "groot-sacrifice",
+            "title": "Groot Sacrifices Himself",
+            "description": "Groot expands himself around the Guardians to shield them from a fatal crash, whispering 'We are Groot' before shattering. He is reborn as a sapling from Rocket's saved twig.",
+            "significance": "high",
+            "charactersInvolved": [
+              "groot",
+              "rocket-raccoon",
+              "peter-quill",
+              "gamora",
+              "drax"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "peter-quill",
+          "gamora",
+          "nebula",
+          "rocket-raccoon",
+          "groot",
+          "drax"
+        ],
+        "charactersAppearing": [
+          "peter-quill",
+          "gamora",
+          "nebula",
+          "rocket-raccoon",
+          "groot",
+          "drax",
+          "thanos"
+        ],
+        "infinityStone": {
+          "name": "Power Stone (The Orb)",
+          "color": "#ab47bc",
+          "location": "Stored on Xandar"
+        },
+        "posterGradient": "linear-gradient(135deg, #1a0533, #b34700)",
+        "imagePath": "assets/images/movies/guardians-of-the-galaxy-2014.jpg"
+      },
+      {
+        "id": "avengers-age-of-ultron-2015",
+        "title": "Avengers: Age of Ultron",
+        "year": 2015,
+        "phase": 2,
+        "synopsis": "Tony Stark's well-intentioned attempt to create a peacekeeping AI called Ultron goes catastrophically wrong when the program achieves sentience and decides humanity itself must be destroyed to achieve peace. The Avengers must stop Ultron before he can cause an extinction-level event.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "ultron-creation",
+            "title": "Ultron Comes to Life",
+            "description": "Tony Stark and Bruce Banner use the Mind Stone's AI fragment within Loki's scepter to birth Ultron, a peacekeeping program. Ultron immediately turns against his creators and the Avengers.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "bruce-banner"
+            ]
+          },
+          {
+            "id": "vision-creation",
+            "title": "Vision Is Born",
+            "description": "The Avengers create Vision by uploading JARVIS into a synthetic body powered by the Mind Stone. Vision is immediately trusted enough to lift Thor's hammer, Mjolnir.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "bruce-banner",
+              "thor-odinson",
+              "vision"
+            ]
+          },
+          {
+            "id": "wanda-twins-introduced",
+            "title": "Scarlet Witch and Quicksilver Debut",
+            "description": "Pietro and Wanda Maximoff, enhanced by HYDRA experiments with the Mind Stone, initially fight against the Avengers before joining their side. Wanda's immense reality-bending powers are first glimpsed.",
+            "significance": "high",
+            "charactersInvolved": [
+              "wanda-maximoff",
+              "tony-stark",
+              "steve-rogers"
+            ]
+          },
+          {
+            "id": "sokovia-destroyed",
+            "title": "Sokovia Cataclysm",
+            "description": "Ultron lifts the city of Sokovia into the sky intending to drop it as a meteor to trigger an extinction event. The Avengers stop him but the destruction of Sokovia has lasting political consequences.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "steve-rogers",
+              "thor-odinson",
+              "bruce-banner",
+              "natasha-romanoff",
+              "clint-barton",
+              "wanda-maximoff",
+              "vision"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "wanda-maximoff",
+          "vision"
+        ],
+        "charactersAppearing": [
+          "tony-stark",
+          "steve-rogers",
+          "thor-odinson",
+          "bruce-banner",
+          "natasha-romanoff",
+          "clint-barton",
+          "wanda-maximoff",
+          "vision"
+        ],
+        "infinityStone": {
+          "name": "Mind Stone (Scepter)",
+          "color": "#f9e04b",
+          "location": "Embedded in Vision's forehead"
+        },
+        "posterGradient": "linear-gradient(135deg, #1a1a2e, #e94560)",
+        "imagePath": "assets/images/movies/avengers-age-of-ultron-2015.jpg"
+      },
+      {
+        "id": "ant-man-2015",
+        "title": "Ant-Man",
+        "year": 2015,
+        "phase": 2,
+        "synopsis": "Petty thief Scott Lang is recruited by inventor Hank Pym to wear a suit that allows him to shrink to insect-size while gaining superhuman strength, and must pull off a heist to prevent dangerous technology from falling into the wrong hands. Scott must embrace his new role as Ant-Man to become the hero his daughter needs him to be.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "ant-man-suit",
+            "title": "Scott Lang Puts On the Ant-Man Suit",
+            "description": "Former thief Scott Lang steals the Ant-Man suit from Hank Pym's home, only to discover it's a recruitment test. Pym needs Scott to be the new Ant-Man.",
+            "significance": "high",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "yellowjacket-threat",
+            "title": "Yellowjacket Technology Developed",
+            "description": "Darren Cross develops the lethal Yellowjacket suit, a militarized version of Pym's shrinking technology. He plans to sell it to HYDRA remnants.",
+            "significance": "high",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "quantum-realm-glimpse",
+            "title": "Scott Enters the Quantum Realm",
+            "description": "Scott shrinks below the atomic level into the Quantum Realm to stop Yellowjacket, nearly becoming lost forever. This first glimpse of the Quantum Realm has enormous future implications.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "ant-man-avengers-facility",
+            "title": "Ant-Man Fights Falcon",
+            "description": "Scott Lang breaks into the Avengers facility at Pym's direction and holds his own against Sam Wilson, a genuine Avenger. This puts Ant-Man on the Avengers' radar.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "scott-lang",
+              "sam-wilson"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "scott-lang"
+        ],
+        "charactersAppearing": [
+          "scott-lang",
+          "sam-wilson"
+        ],
+        "posterGradient": "linear-gradient(135deg, #004d40, #e65100)",
+        "imagePath": "assets/images/movies/ant-man-2015.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Infinity Saga Climax",
+    "sagaName": "Infinity Saga",
+    "tagline": "The universe's greatest heroes face their ultimate challenge",
+    "colorVar": "--phase-3",
+    "yearRange": "2016-2019",
+    "totalMovies": 11,
+    "movies": [
+      {
+        "id": "captain-america-civil-war-2016",
+        "title": "Captain America: Civil War",
+        "year": 2016,
+        "phase": 3,
+        "synopsis": "Political pressure mounts to install a system of accountability for the Avengers after a mission gone wrong causes civilian casualties, splitting the team into opposing factions led by Steve Rogers and Tony Stark. The conflict is further complicated by the return of Bucky Barnes and the machinations of a Sokovian operative named Zemo.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "sokovia-accords",
+            "title": "The Sokovia Accords Divide the Avengers",
+            "description": "The United Nations presents the Sokovia Accords to place the Avengers under governmental oversight following the destruction in Sokovia. This ideological split divides Earth's mightiest heroes.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "steve-rogers",
+              "natasha-romanoff",
+              "wanda-maximoff",
+              "sam-wilson"
+            ]
+          },
+          {
+            "id": "spider-man-introduced",
+            "title": "Spider-Man Joins the MCU",
+            "description": "Tony Stark recruits a teenage Peter Parker from Queens as Spider-Man to help him during the conflict. This marks Spider-Man's first appearance in the MCU.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "peter-parker"
+            ]
+          },
+          {
+            "id": "black-panther-introduced",
+            "title": "T'Challa Becomes Black Panther",
+            "description": "King T'Chaka of Wakanda is killed in a bombing falsely attributed to Bucky Barnes, driving his son T'Challa to don the Black Panther mantle to seek vengeance. Wakanda enters the global stage.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tchalla",
+              "bucky-barnes"
+            ]
+          },
+          {
+            "id": "avengers-split",
+            "title": "The Avengers Are Torn Apart",
+            "description": "The airport battle cements the Avengers' fracture, with Steve's team going underground and Tony's team supporting the Accords. Zemo's real plan - exposing that Bucky killed Tony's parents - drives a final, devastating wedge between Steve and Tony.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "steve-rogers",
+              "bucky-barnes"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "peter-parker",
+          "tchalla"
+        ],
+        "charactersAppearing": [
+          "tony-stark",
+          "steve-rogers",
+          "natasha-romanoff",
+          "sam-wilson",
+          "bucky-barnes",
+          "wanda-maximoff",
+          "vision",
+          "clint-barton",
+          "scott-lang",
+          "peter-parker",
+          "tchalla"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0a1931, #991c1c)",
+        "imagePath": "assets/images/movies/captain-america-civil-war-2016.jpg"
+      },
+      {
+        "id": "doctor-strange-2016",
+        "title": "Doctor Strange",
+        "year": 2016,
+        "phase": 3,
+        "synopsis": "Brilliant but arrogant surgeon Stephen Strange discovers the world of magic after a car accident destroys his hands and he seeks healing from a mysterious enclave in Nepal. He must embrace his destiny as Earth's Sorcerer Supreme to protect reality itself from a rogue sorcerer trying to unleash a dark dimension upon the world.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "strange-becomes-sorcerer",
+            "title": "Stephen Strange Learns the Mystic Arts",
+            "description": "Former surgeon Stephen Strange is trained by the Ancient One in the Mystic Arts, discovering he has a natural gift for mastering reality-bending spells. He transforms from an arrogant doctor into a humble student.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "stephen-strange"
+            ]
+          },
+          {
+            "id": "eye-of-agamotto",
+            "title": "Strange Masters the Eye of Agamotto",
+            "description": "Strange uses the Eye of Agamotto - which contains the Time Stone - to reverse time and study an ancient text. He demonstrates extraordinary natural talent with the most powerful relic in Kamar-Taj.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "stephen-strange"
+            ]
+          },
+          {
+            "id": "dormammu-bargain",
+            "title": "Strange Traps Dormammu in a Time Loop",
+            "description": "Strange uses the Time Stone to trap himself and Dormammu in an infinite loop of death and rebirth, refusing to yield until Dormammu leaves Earth alone. He wins through sheer willpower.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "stephen-strange"
+            ]
+          },
+          {
+            "id": "sorcerer-supreme",
+            "title": "Strange Becomes Earth's Guardian",
+            "description": "Following the Ancient One's death, Strange takes up the mantle of protecting Earth's dimension from mystical threats. He takes over the New York Sanctum.",
+            "significance": "high",
+            "charactersInvolved": [
+              "stephen-strange"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "stephen-strange"
+        ],
+        "charactersAppearing": [
+          "stephen-strange"
+        ],
+        "infinityStone": {
+          "name": "Time Stone (Eye of Agamotto)",
+          "color": "#66bb6a",
+          "location": "Kept at Kamar-Taj"
+        },
+        "posterGradient": "linear-gradient(135deg, #0d1b4b, #6a0dad)",
+        "imagePath": "assets/images/movies/doctor-strange-2016.jpg"
+      },
+      {
+        "id": "guardians-of-the-galaxy-vol2-2017",
+        "title": "Guardians of the Galaxy Vol. 2",
+        "year": 2017,
+        "phase": 3,
+        "synopsis": "Peter Quill's mysterious parentage is finally revealed when the Guardians encounter Ego, a living planet who claims to be his father. The team must confront the true danger Ego represents while Nebula and Gamora reconcile their complicated sisterhood.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "ego-revealed",
+            "title": "Ego Revealed as Peter's Father",
+            "description": "The enigmatic Ego reveals himself to be a Celestial - a living planet - and Peter's biological father. His apparent warmth masks a terrifying genocidal agenda.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-quill"
+            ]
+          },
+          {
+            "id": "ego-evil-plan",
+            "title": "Ego's True Agenda Exposed",
+            "description": "Ego reveals he has been seeding planets with his biological matter to expand himself across the universe, killing billions. He also caused Peter's mother's cancer to ensure Peter would return to him.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-quill",
+              "gamora",
+              "rocket-raccoon",
+              "drax",
+              "groot"
+            ]
+          },
+          {
+            "id": "yondu-sacrifice",
+            "title": "Yondu Sacrifices Himself for Peter",
+            "description": "Yondu gives Peter his space suit in the vacuum of space, sacrificing his own life to save his adopted son. His death reveals the depth of his fatherly love for Peter despite their rocky relationship.",
+            "significance": "high",
+            "charactersInvolved": [
+              "peter-quill",
+              "rocket-raccoon",
+              "groot",
+              "nebula"
+            ]
+          },
+          {
+            "id": "nebula-gamora-reconcile",
+            "title": "Nebula and Gamora Reconcile",
+            "description": "Sisters Nebula and Gamora reach an understanding about their shared traumatic childhood under Thanos. Nebula vows to kill Thanos, setting up her future arc.",
+            "significance": "high",
+            "charactersInvolved": [
+              "nebula",
+              "gamora",
+              "thanos"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "peter-quill",
+          "gamora",
+          "nebula",
+          "rocket-raccoon",
+          "groot",
+          "drax"
+        ],
+        "posterGradient": "linear-gradient(135deg, #2c0e63, #e67c00)",
+        "imagePath": "assets/images/movies/guardians-of-the-galaxy-vol2-2017.jpg"
+      },
+      {
+        "id": "spider-man-homecoming-2017",
+        "title": "Spider-Man: Homecoming",
+        "year": 2017,
+        "phase": 3,
+        "synopsis": "Eager to prove himself to Tony Stark, teenager Peter Parker juggles high school life with his duties as Spider-Man while investigating a dangerous black market weapons dealer known as the Vulture who salvages alien technology. Peter learns that being a hero is about more than proving himself worthy of the Avengers.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "vulture-weapons-ring",
+            "title": "Vulture's Alien Weapons Operation",
+            "description": "Adrian Toomes and his crew have been salvaging alien technology from Avengers battle sites to build and sell powerful black market weapons. Spider-Man discovers the operation.",
+            "significance": "high",
+            "charactersInvolved": [
+              "peter-parker",
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "tony-takes-suit",
+            "title": "Tony Reclaims the Spider-Man Suit",
+            "description": "After Peter goes rogue on a ferry and nearly kills civilians, Tony takes back the hi-tech Spider-Man suit. Peter is forced to rely on his own abilities in a homemade costume.",
+            "significance": "high",
+            "charactersInvolved": [
+              "peter-parker",
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "vulture-identity-twist",
+            "title": "Vulture Is Liz's Father",
+            "description": "Peter discovers that his date to homecoming, Liz, is the daughter of Adrian Toomes, the Vulture. This personal connection raises the stakes of the final confrontation.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "peter-parker"
+            ]
+          },
+          {
+            "id": "peter-refuses-avengers",
+            "title": "Peter Declines Full Avengers Membership",
+            "description": "Tony Stark offers Peter a full-time position on the Avengers with a new suit, but Peter declines, choosing to remain a neighborhood hero for now. Tony hints he was prepared for Peter's answer.",
+            "significance": "high",
+            "charactersInvolved": [
+              "peter-parker",
+              "tony-stark"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "peter-parker",
+          "tony-stark"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1a1a2e, #c41e3a)",
+        "imagePath": "assets/images/movies/spider-man-homecoming-2017.jpg"
+      },
+      {
+        "id": "thor-ragnarok-2017",
+        "title": "Thor: Ragnarok",
+        "year": 2017,
+        "phase": 3,
+        "synopsis": "Thor is imprisoned on the gladiatorial planet Sakaar and must escape with the help of the Hulk to return to Asgard before his newly revealed sister Hela, the goddess of death, can conquer it. The climactic events lead to the destruction of Asgard itself and the survival of its people.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "hela-released",
+            "title": "Hela, Goddess of Death, Is Freed",
+            "description": "Odin's death releases the seal holding Thor's banished sister Hela, who immediately destroys Mjolnir and invades Asgard. The MCU's most powerful villain to date is unleashed.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson",
+              "loki"
+            ]
+          },
+          {
+            "id": "hulk-sakaar",
+            "title": "Thor Finds Hulk on Sakaar",
+            "description": "Thor is captured and taken to the junk planet Sakaar, where he discovers Bruce Banner has been living as the Grandmaster's gladiatorial champion for two years. Hulk is entirely in control, with Banner suppressed.",
+            "significance": "high",
+            "charactersInvolved": [
+              "thor-odinson",
+              "bruce-banner"
+            ]
+          },
+          {
+            "id": "ragnarok-fulfillment",
+            "title": "Asgard Is Destroyed to Save Its People",
+            "description": "Thor realizes Ragnarok - the prophecy of Asgard's destruction - is not something to be prevented but fulfilled, releasing the fire demon Surtur to destroy both Asgard and Hela. Asgard is a people, not a place.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson",
+              "loki",
+              "bruce-banner"
+            ]
+          },
+          {
+            "id": "asgardians-refugee-ship",
+            "title": "Asgardian Refugees Take to Space",
+            "description": "Thor leads the surviving Asgardians aboard a ship heading toward Earth. Loki secretly pockets the Tesseract from Asgard's treasury before its destruction.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson",
+              "loki",
+              "bruce-banner"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "thor-odinson",
+          "loki",
+          "bruce-banner"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0d3060, #b8600a)",
+        "imagePath": "assets/images/movies/thor-ragnarok-2017.jpg"
+      },
+      {
+        "id": "black-panther-2018",
+        "title": "Black Panther",
+        "year": 2018,
+        "phase": 3,
+        "synopsis": "Following the death of his father, T'Challa returns home to the technologically advanced African nation of Wakanda to take his rightful place as king, only to have his rule challenged by the ruthless Erik Killmonger who plans to use Wakanda's vibranium resources to wage war on the world. T'Challa must defend both his crown and his country's soul.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "tchalla-becomes-king",
+            "title": "T'Challa Assumes the Wakandan Throne",
+            "description": "Following King T'Chaka's death, T'Challa undergoes the ritual to become king of Wakanda and officially takes on the Black Panther mantle. He must navigate both domestic politics and external threats.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tchalla"
+            ]
+          },
+          {
+            "id": "killmonger-challenge",
+            "title": "Killmonger Claims the Throne",
+            "description": "Erik Killmonger, a long-lost cousin with a legitimate Wakandan bloodline, defeats T'Challa in ritual combat and seizes the throne. He nearly kills T'Challa and plans to use Wakanda's weapons against the world.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tchalla"
+            ]
+          },
+          {
+            "id": "wakanda-revealed",
+            "title": "Wakanda Opens to the World",
+            "description": "After reclaiming his throne, T'Challa makes the historic decision to end Wakanda's centuries of isolationism and share its vibranium and knowledge with the world. This reshapes global geopolitics in the MCU.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tchalla"
+            ]
+          },
+          {
+            "id": "bucky-wakanda",
+            "title": "Bucky Barnes Recovers in Wakanda",
+            "description": "Wakanda's scientists have been helping deprogram Bucky Barnes from his Winter Soldier conditioning. He is now recovering peacefully in the country, preparing to emerge as a new hero.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "tchalla",
+              "bucky-barnes"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "tchalla",
+          "bucky-barnes"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1a0533, #4a0080)",
+        "imagePath": "assets/images/movies/black-panther-2018.jpg"
+      },
+      {
+        "id": "avengers-infinity-war-2018",
+        "title": "Avengers: Infinity War",
+        "year": 2018,
+        "phase": 3,
+        "synopsis": "Thanos embarks on a desperate mission to collect all six Infinity Stones so he can wipe out half of all life in the universe with a single snap, believing it to be the only way to prevent universal resource depletion. The Avengers and their allies race across the universe to stop him but suffer their most devastating defeat.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "thanos-gets-space-power-stones",
+            "title": "Thanos Claims His First Stones",
+            "description": "Thanos destroys the Asgardian refugee ship, kills Loki, and takes the Space Stone; he then destroys Xandar off-screen to claim the Power Stone. His campaign of universal genocide is fully underway.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thanos",
+              "thor-odinson",
+              "loki"
+            ]
+          },
+          {
+            "id": "gamora-soul-stone",
+            "title": "Gamora Is Sacrificed for the Soul Stone",
+            "description": "Thanos sacrifices his adopted daughter Gamora on Vormir to obtain the Soul Stone, proving his twisted love is real enough to meet the Stone's terrible requirement. This is the emotional turning point of the film.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thanos",
+              "gamora"
+            ]
+          },
+          {
+            "id": "vision-mind-stone-death",
+            "title": "Vision Is Killed for the Mind Stone",
+            "description": "Wanda destroys the Mind Stone and kills Vision to prevent Thanos from taking it, but Thanos uses the Time Stone to reverse time and rip the stone from Vision's head anyway. The sacrifice is rendered meaningless.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "wanda-maximoff",
+              "vision",
+              "thanos"
+            ]
+          },
+          {
+            "id": "the-snap",
+            "title": "Thanos Snaps and Erases Half All Life",
+            "description": "With all six Infinity Stones assembled in the Gauntlet, Thanos snaps his fingers and half of all life in the universe disintegrates to dust. Heroes across the universe cease to exist.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thanos",
+              "steve-rogers",
+              "tony-stark",
+              "thor-odinson",
+              "bruce-banner",
+              "peter-parker",
+              "stephen-strange",
+              "peter-quill",
+              "wanda-maximoff"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "tony-stark",
+          "steve-rogers",
+          "thor-odinson",
+          "bruce-banner",
+          "natasha-romanoff",
+          "peter-parker",
+          "stephen-strange",
+          "wanda-maximoff",
+          "vision",
+          "peter-quill",
+          "gamora",
+          "nebula",
+          "rocket-raccoon",
+          "groot",
+          "drax",
+          "tchalla",
+          "bucky-barnes",
+          "sam-wilson",
+          "thanos"
+        ],
+        "infinityStone": {
+          "name": "Soul Stone (Vormir)",
+          "color": "#ff7043",
+          "location": "Acquired at Vormir"
+        },
+        "posterGradient": "linear-gradient(135deg, #0a0a0a, #6b0f1a)",
+        "imagePath": "assets/images/movies/avengers-infinity-war-2018.jpg"
+      },
+      {
+        "id": "ant-man-and-the-wasp-2018",
+        "title": "Ant-Man and the Wasp",
+        "year": 2018,
+        "phase": 3,
+        "synopsis": "Scott Lang is enlisted to help Hope van Dyne and Hank Pym on a mission to rescue Hope's mother Janet from the subatomic Quantum Realm while he is under house arrest following the events of Civil War. The film ends with a devastating post-credits scene connecting it directly to Infinity War.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "wasp-debuts",
+            "title": "Hope van Dyne Becomes the Wasp",
+            "description": "Hope van Dyne dons her own Wasp suit, finally taking on the hero identity her mother once held. She is immediately more capable and experienced than Scott Lang.",
+            "significance": "high",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "janet-quantum-realm",
+            "title": "Janet van Dyne Is Rescued from the Quantum Realm",
+            "description": "The team successfully opens a tunnel to the Quantum Realm and rescues Janet van Dyne after thirty years of being trapped there. Her time in the Quantum Realm has given her extraordinary new abilities.",
+            "significance": "high",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "quantum-tunnel-built",
+            "title": "The Quantum Tunnel Is Developed",
+            "description": "Hank Pym's mobile Quantum Tunnel proves to be the key technology that enables controlled access to the Quantum Realm. This device will be critical to the Avengers' plans in Endgame.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "snap-victims",
+            "title": "The Pym Family Is Snapped Away",
+            "description": "In the post-credits scene, Hope, Hank, and Janet are all disintegrated by Thanos' snap while Scott is trapped in the Quantum Realm. He has no idea what happened.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "scott-lang"
+        ],
+        "posterGradient": "linear-gradient(135deg, #00695c, #c62828)",
+        "imagePath": "assets/images/movies/ant-man-and-the-wasp-2018.jpg"
+      },
+      {
+        "id": "captain-marvel-2019",
+        "title": "Captain Marvel",
+        "year": 2019,
+        "phase": 3,
+        "synopsis": "In the 1990s, a Kree warrior named Vers crashlands on Earth and discovers she is actually Carol Danvers, a human Air Force pilot whose memory was wiped after a fateful experiment gave her cosmic powers. She must uncover the truth about her past while preventing a war between alien races from devastating Earth.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "carol-discovers-origin",
+            "title": "Carol Danvers Recovers Her True Identity",
+            "description": "Carol Danvers uncovers her true human identity and learns she was not a Kree but an Earth Air Force pilot who was captured and brainwashed. She reclaims her name and her past.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "carol-danvers",
+              "nick-fury"
+            ]
+          },
+          {
+            "id": "skrulls-true-nature",
+            "title": "The Skrulls Are Revealed as Refugees",
+            "description": "Carol discovers the Skrulls are not conquerors but refugees fleeing Kree extermination, and she has been fighting on the wrong side. She resolves to help them find a new home.",
+            "significance": "high",
+            "charactersInvolved": [
+              "carol-danvers"
+            ]
+          },
+          {
+            "id": "carol-unlocks-full-power",
+            "title": "Carol Danvers Unlocks Her Full Potential",
+            "description": "Carol removes the inhibitor chip placed by the Kree and accesses her full cosmic power, becoming one of the most powerful beings in the universe. She destroys an entire Kree fleet alone.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "carol-danvers"
+            ]
+          },
+          {
+            "id": "avengers-initiative-named",
+            "title": "The Avengers Initiative Is Named",
+            "description": "Nick Fury renames his response initiative 'The Avengers' in honor of Carol Danvers' call sign 'Avenger'. He also modifies a pager to contact Carol in cases of extreme emergency.",
+            "significance": "high",
+            "charactersInvolved": [
+              "carol-danvers",
+              "nick-fury"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "carol-danvers"
+        ],
+        "charactersAppearing": [
+          "carol-danvers",
+          "nick-fury"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1a237e, #e65100)",
+        "imagePath": "assets/images/movies/captain-marvel-2019.jpg"
+      },
+      {
+        "id": "avengers-endgame-2019",
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "phase": 3,
+        "synopsis": "Five years after Thanos' snap, the surviving Avengers devise a desperate time heist to travel back through time and collect the Infinity Stones before Thanos does, then use them to undo the snap and resurrect the fallen. The plan leads to a final, epic confrontation with a past version of Thanos and the ultimate sacrifice of Tony Stark.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "time-heist",
+            "title": "The Avengers Execute a Time Heist",
+            "description": "The surviving Avengers use the Quantum Realm to travel back in time to key moments when the Infinity Stones were accessible, splitting into teams to retrieve them. This desperate plan is their only hope.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "steve-rogers",
+              "thor-odinson",
+              "bruce-banner",
+              "natasha-romanoff",
+              "clint-barton",
+              "nebula",
+              "rocket-raccoon",
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "natasha-soul-stone",
+            "title": "Natasha Sacrifices Herself for the Soul Stone",
+            "description": "Natasha Romanoff and Clint Barton travel to Vormir, where one must sacrifice themselves. Natasha gives her life so Clint can return with the Soul Stone, ending her journey.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "natasha-romanoff",
+              "clint-barton"
+            ]
+          },
+          {
+            "id": "hulk-snap-reversal",
+            "title": "Hulk Reverses the Snap",
+            "description": "Bruce Banner, as Smart Hulk, wields the Gauntlet loaded with all six Stones and reverses the snap, resurrecting everyone who was disintegrated five years ago. Half the universe lives again.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "bruce-banner"
+            ]
+          },
+          {
+            "id": "tony-snap-final",
+            "title": "Tony Stark Snaps Away Thanos",
+            "description": "Tony Stark seizes the Infinity Stones and delivers the ultimate snap, erasing Thanos and his army from existence. He dies from the energy discharge, completing his arc from selfish genius to ultimate hero.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tony-stark",
+              "thanos",
+              "steve-rogers",
+              "thor-odinson"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "tony-stark",
+          "steve-rogers",
+          "thor-odinson",
+          "bruce-banner",
+          "natasha-romanoff",
+          "clint-barton",
+          "nebula",
+          "rocket-raccoon",
+          "scott-lang",
+          "carol-danvers",
+          "peter-parker",
+          "wanda-maximoff",
+          "tchalla",
+          "sam-wilson",
+          "bucky-barnes",
+          "peter-quill",
+          "gamora",
+          "drax",
+          "groot",
+          "thanos",
+          "stephen-strange"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0a0a0a, #1a1a5e)",
+        "imagePath": "assets/images/movies/avengers-endgame-2019.jpg"
+      },
+      {
+        "id": "spider-man-far-from-home-2019",
+        "title": "Spider-Man: Far From Home",
+        "year": 2019,
+        "phase": 3,
+        "synopsis": "Grieving Tony Stark's death, Peter Parker joins his classmates on a summer trip to Europe hoping for a vacation from being Spider-Man, but he is recruited by Nick Fury and a mysterious new hero named Mysterio to fight elemental creatures. Peter discovers a dangerous deception that forces him to step out of Iron Man's shadow.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "fury-recruits-peter",
+            "title": "Nick Fury Recruits Peter on Vacation",
+            "description": "Nick Fury hijacks Peter Parker's European school trip and forces him to cooperate against his will. Peter is desperate to take a break from being Spider-Man.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "peter-parker",
+              "nick-fury"
+            ]
+          },
+          {
+            "id": "edith-glasses",
+            "title": "Tony's EDITH System Bequeathed to Peter",
+            "description": "Peter receives Tony's glasses containing EDITH, an AI controlling a global weapons satellite network. Peter accidentally misuses it, foreshadowing the dangers of his new responsibility.",
+            "significance": "high",
+            "charactersInvolved": [
+              "peter-parker",
+              "tony-stark"
+            ]
+          },
+          {
+            "id": "mysterio-deception",
+            "title": "Mysterio Is Exposed as a Fraud",
+            "description": "Peter discovers Quentin Beck - 'Mysterio' - is a disgruntled former Stark employee using advanced illusion drones to fake a multiverse threat. His entire heroic identity is manufactured.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-parker"
+            ]
+          },
+          {
+            "id": "spider-man-identity-exposed",
+            "title": "Spider-Man's Identity Revealed to the World",
+            "description": "Mysterio's posthumous message exposes Peter Parker as Spider-Man to the entire world, framing him as a murderer. This cliffhanger fundamentally changes Peter's life.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-parker",
+              "nick-fury"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "peter-parker",
+          "nick-fury"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0d3b6e, #c62a2a)",
+        "imagePath": "assets/images/movies/spider-man-far-from-home-2019.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Multiverse Saga Begins",
+    "sagaName": "Multiverse Saga",
+    "tagline": "The boundaries of reality begin to fracture",
+    "colorVar": "--phase-4",
+    "yearRange": "2021-2022",
+    "totalMovies": 7,
+    "movies": [
+      {
+        "id": "black-widow-2021",
+        "title": "Black Widow",
+        "year": 2021,
+        "phase": 4,
+        "synopsis": "Set between Civil War and Infinity War, Natasha Romanoff is on the run from the government when she is forced to confront her past and the Red Room, the Soviet program that trained her as an assassin. She must reunite with her surrogate family to take down the Red Room's controller, Dreykov, and free the other Black Widows.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "red-room-exposed",
+            "title": "The Red Room Is Still Active",
+            "description": "Natasha discovers the Red Room program is still operational, controlling dozens of sleeper agents worldwide through chemical mind control. The threat she thought she had ended years ago is very much alive.",
+            "significance": "high",
+            "charactersInvolved": [
+              "natasha-romanoff",
+              "yelena-belova"
+            ]
+          },
+          {
+            "id": "yelena-introduced",
+            "title": "Yelena Belova Enters the Story",
+            "description": "Natasha's surrogate younger sister Yelena Belova is freed from her Red Room mind control and teams up with Natasha to bring down Dreykov. She becomes a peer and heir to the Black Widow legacy.",
+            "significance": "high",
+            "charactersInvolved": [
+              "natasha-romanoff",
+              "yelena-belova"
+            ]
+          },
+          {
+            "id": "red-room-destroyed",
+            "title": "The Red Room Program Is Ended",
+            "description": "Natasha and her allies destroy the Red Room's floating fortress and free all the controlled Black Widows. Natasha fulfills her long-held mission of atoning for her past.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "natasha-romanoff",
+              "yelena-belova"
+            ]
+          },
+          {
+            "id": "yelena-future-setup",
+            "title": "Yelena Given a Mission by Valentina",
+            "description": "In the post-credits scene, Yelena visits Natasha's grave and is assigned her next target by Valentina Allegra de Fontaine. She is pointed toward Clint Barton, setting up future conflict.",
+            "significance": "high",
+            "charactersInvolved": [
+              "yelena-belova",
+              "natasha-romanoff"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "yelena-belova"
+        ],
+        "charactersAppearing": [
+          "natasha-romanoff",
+          "yelena-belova"
+        ],
+        "posterGradient": "linear-gradient(135deg, #2c0010, #c62828)",
+        "imagePath": "assets/images/movies/black-widow-2021.jpg"
+      },
+      {
+        "id": "shang-chi-2021",
+        "title": "Shang-Chi and the Legend of the Ten Rings",
+        "year": 2021,
+        "phase": 4,
+        "synopsis": "Shang-Chi is drawn into the world of the Ten Rings organization when his father Xu Wenwu, the immortal leader who has wielded the powerful ten rings for centuries, believes the mythical land of Ta Lo is holding his dead wife captive. Shang-Chi must reconcile his identity and heritage to face the threat his father cannot see.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "shang-chi-origin",
+            "title": "Shang-Chi Confronts His Past",
+            "description": "Shang-Chi, living in secret in San Francisco, is forced to confront his identity as the son of the immortal Xu Wenwu. He must decide whether to embrace or escape his heritage.",
+            "significance": "high",
+            "charactersInvolved": [
+              "shang-chi"
+            ]
+          },
+          {
+            "id": "ten-rings-power",
+            "title": "The True Ten Rings Are Revealed",
+            "description": "Xu Wenwu's ten rings are ancient cosmic artifacts of immense power, not the mandroids of the impostor Ten Rings from earlier MCU stories. Their true origin and significance remain mysterious.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "shang-chi"
+            ]
+          },
+          {
+            "id": "ta-lo-battle",
+            "title": "Battle for Ta Lo",
+            "description": "Shang-Chi fights to defend the hidden village of Ta Lo from his father's forces, and later from the soul-devouring Dweller-in-Darkness unleashed from beyond the Great Protector's gate. He inherits the ten rings.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "shang-chi"
+            ]
+          },
+          {
+            "id": "ten-rings-signal",
+            "title": "The Ten Rings Send a Signal",
+            "description": "Wong, Bruce Banner, and Carol Danvers analyze the ten rings and find they are sending a beacon signal of unknown origin into deep space. Something ancient has been summoned.",
+            "significance": "high",
+            "charactersInvolved": [
+              "shang-chi",
+              "bruce-banner",
+              "stephen-strange"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "shang-chi"
+        ],
+        "charactersAppearing": [
+          "shang-chi",
+          "bruce-banner",
+          "stephen-strange"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1a0a00, #c47300)",
+        "imagePath": "assets/images/movies/shang-chi-2021.jpg"
+      },
+      {
+        "id": "eternals-2021",
+        "title": "Eternals",
+        "year": 2021,
+        "phase": 4,
+        "synopsis": "A group of immortal beings called Eternals, secretly living on Earth for thousands of years following the instructions of their creators the Celestials, reunite when they discover a devastating truth about their purpose and the planet they have come to call home. They must decide whether to follow their programming or protect humanity.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "eternals-history",
+            "title": "The Eternals' True Purpose Revealed",
+            "description": "The Eternals discover they were not sent to protect humanity from the Deviants but to nurture human population growth to power the birth of a new Celestial from Earth's core. Earth's creation is a cosmic farm.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thanos"
+            ]
+          },
+          {
+            "id": "emergence-stopped",
+            "title": "The Emergence Is Prevented",
+            "description": "The Eternals split between those who want to stop the Emergence and those who want to let it happen. Sersi and her allies ultimately stop the newborn Celestial Tiamut from destroying Earth.",
+            "significance": "critical",
+            "charactersInvolved": []
+          },
+          {
+            "id": "arishem-judgment",
+            "title": "Arishem Takes the Eternals for Judgment",
+            "description": "The Celestial Arishem appears and takes Sersi, Kingo, and Phastos to stand judgment for stopping the Emergence. Humanity's future is now on trial before a Celestial.",
+            "significance": "high",
+            "charactersInvolved": []
+          },
+          {
+            "id": "thanos-connection",
+            "title": "Eros Mentions Thanos",
+            "description": "In the post-credits scene, the Eternal Eros (Thanos' brother) appears aboard the Domo seeking to help the remaining Eternals find their missing teammates. Thanos' family is brought into play.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "thanos"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [],
+        "posterGradient": "linear-gradient(135deg, #1a1a0a, #d4a017)",
+        "imagePath": "assets/images/movies/eternals-2021.jpg"
+      },
+      {
+        "id": "spider-man-no-way-home-2021",
+        "title": "Spider-Man: No Way Home",
+        "year": 2021,
+        "phase": 4,
+        "synopsis": "With his identity exposed, Peter Parker asks Doctor Strange to cast a spell to make everyone forget he is Spider-Man, but the botched spell tears open the multiverse and brings in villains and alternate Spider-Men from other universes. Peter faces an impossible choice that will cost him everything.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "multiverse-crack",
+            "title": "The Multiverse Is Cracked Open",
+            "description": "Doctor Strange's memory-erasing spell goes wrong when Peter Parker cannot stop changing the parameters, pulling in everyone across the multiverse who knows Spider-Man's true identity. Multiversal chaos begins.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-parker",
+              "stephen-strange"
+            ]
+          },
+          {
+            "id": "three-spider-men",
+            "title": "Three Spider-Men Unite",
+            "description": "Two alternate Spider-Men from other universes arrive on Earth-616 and join Peter Parker in developing cures for the multiverse villains. This moment celebrates Spider-Man's legacy across film generations.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-parker",
+              "stephen-strange"
+            ]
+          },
+          {
+            "id": "mj-ned-fate",
+            "title": "Peter Loses Aunt May and Then Everything",
+            "description": "Aunt May is killed by the Green Goblin after Peter refuses to send the villains back to their deaths. Peter makes the ultimate sacrifice, asking Strange to make the entire world forget Peter Parker exists.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-parker",
+              "stephen-strange"
+            ]
+          },
+          {
+            "id": "peter-starts-over",
+            "title": "Peter Parker Starts Anew",
+            "description": "With the entire world having forgotten Peter Parker, he starts over completely alone in a small apartment in New York City, choosing to be a street-level Spider-Man on his own terms. The MCU's most mature Spider-Man is born.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-parker"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "peter-parker",
+          "stephen-strange"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0a1931, #6a0dad)",
+        "imagePath": "assets/images/movies/spider-man-no-way-home-2021.jpg"
+      },
+      {
+        "id": "doctor-strange-multiverse-of-madness-2022",
+        "title": "Doctor Strange in the Multiverse of Madness",
+        "year": 2022,
+        "phase": 4,
+        "synopsis": "Doctor Strange travels through the multiverse with America Chavez, a teenager with the power to punch through multiversal walls, while pursued by the corrupted Scarlet Witch who wants America's power to reach a universe where her children are alive. Strange must confront the consequences of his choices and the true nature of chaos magic.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "wanda-villain",
+            "title": "Wanda Maximoff Is the Villain",
+            "description": "Completely corrupted by the Darkhold's dark magic following the events of WandaVision, Wanda Maximoff has become the Scarlet Witch in the most dangerous sense. She is willing to kill to reach her children.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "wanda-maximoff",
+              "stephen-strange"
+            ]
+          },
+          {
+            "id": "illuminati-encounter",
+            "title": "Strange Meets the Illuminati",
+            "description": "In an alternate universe, Strange encounters the Illuminati, a council of that world's greatest heroes. Wanda massacres nearly all of them with terrifying ease, demonstrating her unmatched power.",
+            "significance": "high",
+            "charactersInvolved": [
+              "stephen-strange",
+              "wanda-maximoff"
+            ]
+          },
+          {
+            "id": "wanda-darkhold-destroyed",
+            "title": "Wanda Destroys the Darkhold and Herself",
+            "description": "Wanda, shown the mirror of the monster she has become through the eyes of her alternate-universe children, destroys the Darkhold across all realities and collapses the mountain fortress on herself. Her redemptive sacrifice saves the multiverse.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "wanda-maximoff",
+              "stephen-strange"
+            ]
+          },
+          {
+            "id": "clea-third-eye",
+            "title": "Strange Opens a Third Eye",
+            "description": "Strange develops a third eye after using the Darkhold, indicating the corruption has left a permanent mark. He is then recruited by the sorceress Clea to help fix an incursion he caused.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "stephen-strange"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "stephen-strange",
+          "wanda-maximoff"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1c0030, #8b0000)",
+        "imagePath": "assets/images/movies/doctor-strange-multiverse-of-madness-2022.jpg"
+      },
+      {
+        "id": "thor-love-and-thunder-2022",
+        "title": "Thor: Love and Thunder",
+        "year": 2022,
+        "phase": 4,
+        "synopsis": "Thor is on a journey of self-discovery when he encounters a terrifying villain named Gorr the God Butcher, who seeks the extinction of all gods, and discovers that his ex-girlfriend Jane Foster has wielded Mjolnir to become the Mighty Thor. Thor must balance love and duty while confronting his own identity.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "jane-mighty-thor",
+            "title": "Jane Foster Becomes the Mighty Thor",
+            "description": "Mjolnir, shattered by Hela, has reassembled itself and deemed Jane Foster worthy, granting her Thor's power even as terminal cancer ravages her body. Each transformation heals and simultaneously worsens her condition.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson"
+            ]
+          },
+          {
+            "id": "gorr-children-kidnapping",
+            "title": "Gorr Kidnaps the Children of Asgard",
+            "description": "Gorr the God Butcher kidnaps all the children of New Asgard to use as bait, drawing Thor, Jane, and Valkyrie to a shadow realm. His mission to kill every god is reaching its climax.",
+            "significance": "high",
+            "charactersInvolved": [
+              "thor-odinson"
+            ]
+          },
+          {
+            "id": "jane-death",
+            "title": "Jane Foster's Final Battle and Death",
+            "description": "Jane Foster uses her final transformation to help Thor defeat Gorr, spending the last of her life force to save Thor and the kidnapped children. She dies in Thor's arms, and is welcomed into Valhalla.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "thor-odinson"
+            ]
+          },
+          {
+            "id": "love-daughter",
+            "title": "Thor Adopts Gorr's Daughter",
+            "description": "Gorr uses Eternity's wish not to kill all gods but to resurrect his daughter Love. Thor adopts Love and raises her as his own, becoming a father figure at last.",
+            "significance": "high",
+            "charactersInvolved": [
+              "thor-odinson"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "thor-odinson",
+          "peter-quill",
+          "rocket-raccoon",
+          "groot",
+          "nebula",
+          "drax"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0d1f5c, #a800b7)",
+        "imagePath": "assets/images/movies/thor-love-and-thunder-2022.jpg"
+      },
+      {
+        "id": "black-panther-wakanda-forever-2022",
+        "title": "Black Panther: Wakanda Forever",
+        "year": 2022,
+        "phase": 4,
+        "synopsis": "Wakanda grieves the death of King T'Challa while facing a new threat from Talokan, an underwater nation led by the powerful Namor who plans to wage war on the surface world. Princess Shuri must find a way to protect her people and decide whether vengeance or peace is Wakanda's future.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "tchalla-death",
+            "title": "King T'Challa Dies",
+            "description": "T'Challa, king of Wakanda and the Black Panther, dies of an undisclosed illness. Wakanda and the world mourn, leaving a profound void in leadership and the Black Panther mantle.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tchalla"
+            ]
+          },
+          {
+            "id": "namor-talokan-emerge",
+            "title": "Namor and Talokan Emerge",
+            "description": "The underwater Mesoamerican nation of Talokan surfaces to challenge Wakanda's dominance as the world's source of vibranium. Namor, a mutant of immense power, demands an alliance against the surface world.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tchalla"
+            ]
+          },
+          {
+            "id": "shuri-black-panther",
+            "title": "Shuri Becomes the Black Panther",
+            "description": "Shuri synthesizes a new heart-shaped herb using a vibranium sample and undergoes the Black Panther ritual, receiving power from her ancestor in the Ancestral Plane. She becomes the new Black Panther.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "tchalla"
+            ]
+          },
+          {
+            "id": "riri-ironheart-debut",
+            "title": "Riri Williams Becomes Ironheart",
+            "description": "MIT prodigy Riri Williams builds a suit of Iron Man-inspired armor and enters the conflict, establishing herself as a powerful new hero. She becomes a key future character in the MCU.",
+            "significance": "high",
+            "charactersInvolved": [
+              "tchalla"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "tchalla"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0a0a1a, #005f73)",
+        "imagePath": "assets/images/movies/black-panther-wakanda-forever-2022.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Road to Doomsday",
+    "sagaName": "Multiverse Saga",
+    "tagline": "Every variant leads to the same inevitable end",
+    "colorVar": "--phase-5",
+    "yearRange": "2023-2025",
+    "totalMovies": 7,
+    "movies": [
+      {
+        "id": "ant-man-quantumania-2023",
+        "title": "Ant-Man and the Wasp: Quantumania",
+        "year": 2023,
+        "phase": 5,
+        "synopsis": "Scott Lang, Hope van Dyne, and their family are sucked into the Quantum Realm where they encounter a dangerous conqueror named Kang who has been banished there. Scott must sacrifice everything to keep Kang imprisoned and prevent him from escaping to wreak devastation across time.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "kang-introduced",
+            "title": "Kang the Conqueror Is Introduced",
+            "description": "The exiled variant Kang the Conqueror is revealed as the ruler of a vast empire within the Quantum Realm. He is far more powerful and dangerous than any villain Scott Lang has ever faced.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "kang-defeated",
+            "title": "Kang Is Defeated and Killed",
+            "description": "Scott and Hope defeat this Kang variant and destroy his time machine, trapping his forces in the Quantum Realm. However, the victory may be pyrrhic.",
+            "significance": "high",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "council-of-kangs",
+            "title": "The Council of Kangs Assembles",
+            "description": "In the post-credits scene, a vast Council of Kang variants convenes, furious that their exiled counterpart was killed by a mortal. An infinite army of Kangs now knows the Avengers exist.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          },
+          {
+            "id": "scott-trapped-quantum",
+            "title": "Scott Lang Questions His Impact",
+            "description": "Despite defeating Kang, Scott Lang reflects that he may have done more harm than good by getting noticed by the Council of Kangs. His victory feels hollow against the scale of the threat unleashed.",
+            "significance": "medium",
+            "charactersInvolved": [
+              "scott-lang"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "scott-lang"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0a2a3a, #7b00a8)",
+        "imagePath": "assets/images/movies/ant-man-quantumania-2023.jpg"
+      },
+      {
+        "id": "guardians-of-the-galaxy-vol3-2023",
+        "title": "Guardians of the Galaxy Vol. 3",
+        "year": 2023,
+        "phase": 5,
+        "synopsis": "The Guardians embark on a mission to save Rocket's life after he is critically injured, uncovering the dark secret of his origins at the hands of the High Evolutionary, a fanatical geneticist who created him and now wants him back. This bittersweet final chapter closes out the original Guardians' story.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "rocket-origin-revealed",
+            "title": "Rocket's Tragic Origin Is Uncovered",
+            "description": "The Guardians discover Rocket was created and brutally experimented on by the High Evolutionary in his obsessive quest to create a perfect society. Rocket's trauma and self-worth are finally given context.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "rocket-raccoon",
+              "peter-quill",
+              "gamora",
+              "nebula",
+              "groot",
+              "drax"
+            ]
+          },
+          {
+            "id": "rocket-near-death",
+            "title": "Rocket Faces Death",
+            "description": "An attack on the Guardians' headquarters leaves Rocket critically injured, and a kill switch implanted by the High Evolutionary prevents normal medical treatment. His life hangs in the balance.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "rocket-raccoon",
+              "peter-quill",
+              "groot"
+            ]
+          },
+          {
+            "id": "high-evolutionary-defeated",
+            "title": "High Evolutionary Is Defeated",
+            "description": "The Guardians assault the High Evolutionary's ship, free his experiments, and destroy his life's work, leaving him beaten and disgraced. The children he was perfecting are released to a new home.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "rocket-raccoon",
+              "peter-quill",
+              "gamora",
+              "nebula",
+              "groot",
+              "drax"
+            ]
+          },
+          {
+            "id": "guardians-disband",
+            "title": "The Original Guardians Go Their Separate Ways",
+            "description": "The original team disbands peacefully after their mission: Peter returns to Earth to reconnect with his grandfather, Rocket leads a new team, and Gamora returns to the Ravagers. Each Guardian finds their true home.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "peter-quill",
+              "rocket-raccoon",
+              "gamora",
+              "nebula",
+              "groot",
+              "drax"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "peter-quill",
+          "rocket-raccoon",
+          "gamora",
+          "nebula",
+          "groot",
+          "drax"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1a0030, #c45200)",
+        "imagePath": "assets/images/movies/guardians-of-the-galaxy-vol3-2023.jpg"
+      },
+      {
+        "id": "the-marvels-2023",
+        "title": "The Marvels",
+        "year": 2023,
+        "phase": 5,
+        "synopsis": "Carol Danvers, Kamala Khan, and Monica Rambeau find their powers entangled, causing them to swap locations whenever they use them, and must work together as a team to untangle themselves while confronting a vengeful Kree prince whose homeworld Carol accidentally destroyed. The film positions a new generation of Marvel heroes.",
+        "importance": "optional",
+        "keyEvents": [
+          {
+            "id": "power-entanglement",
+            "title": "Three Heroes' Powers Become Entangled",
+            "description": "Carol Danvers, Kamala Khan, and Monica Rambeau swap places every time one of them uses their powers. They must learn to coordinate as a team to overcome this chaotic limitation.",
+            "significance": "high",
+            "charactersInvolved": [
+              "carol-danvers"
+            ]
+          },
+          {
+            "id": "kree-darband",
+            "title": "Dar-Benn's Campaign of Revenge",
+            "description": "Kree revolutionary Dar-Benn wields a Quantum Band to steal natural resources from planets Carol previously helped, blaming her for the destruction of Hala. Her plan threatens to collapse a critical star.",
+            "significance": "high",
+            "charactersInvolved": [
+              "carol-danvers"
+            ]
+          },
+          {
+            "id": "monica-stranded",
+            "title": "Monica Is Stranded in Another Universe",
+            "description": "Monica Rambeau seals the collapsed multiverse rift but is trapped in another universe in the process. She wakes up to discover she has been found by an alternate-universe Maria Rambeau.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "carol-danvers"
+            ]
+          },
+          {
+            "id": "new-marvels-team",
+            "title": "The Marvels Are Established as a Team",
+            "description": "Carol, Kamala, and Monica prove themselves as an effective team despite the chaos of their shared power. Kamala takes the first steps in assembling a new generation of young heroes.",
+            "significance": "high",
+            "charactersInvolved": [
+              "carol-danvers"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "carol-danvers"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1a0040, #ff6b35)",
+        "imagePath": "assets/images/movies/the-marvels-2023.jpg"
+      },
+      {
+        "id": "deadpool-and-wolverine-2024",
+        "title": "Deadpool & Wolverine",
+        "year": 2024,
+        "phase": 5,
+        "synopsis": "Wade Wilson is recruited by the Time Variance Authority and drags a reluctant, deeply cynical Logan from the Sacred Timeline multiverse to save his own universe from being pruned. Together, the two damaged anti-heroes must become something greater than either is alone.",
+        "importance": "essential",
+        "keyEvents": [
+          {
+            "id": "deadpool-mcu-entry",
+            "title": "Deadpool Enters the MCU",
+            "description": "Wade Wilson is pulled from his universe by the Time Variance Authority following the Multiverse Saga's expansion. Deadpool officially crosses over from Fox's X-Men universe into the MCU.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "deadpool",
+              "wolverine"
+            ]
+          },
+          {
+            "id": "wolverine-resurrection",
+            "title": "A Deadpool-Dragged Wolverine Returns",
+            "description": "Deadpool drags a broken, unwilling variant of Logan to be the hero of a universe that is not his own. This Logan is defined by failure and self-loathing, the anti-hero of the story.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "deadpool",
+              "wolverine"
+            ]
+          },
+          {
+            "id": "void-battle",
+            "title": "Battle in the Void",
+            "description": "Deadpool and Wolverine fight through the TVA's Void, facing Cassandra Nova and the discarded heroes of defunct Fox Marvel franchises. They turn the MCU's acquisition of Fox into a grand comedic event.",
+            "significance": "high",
+            "charactersInvolved": [
+              "deadpool",
+              "wolverine"
+            ]
+          },
+          {
+            "id": "marvel-legacy-honored",
+            "title": "The Multiverse of Marvel Legacies Honored",
+            "description": "The film weaves together decades of Fox Marvel history with the MCU in an act of loving tribute. Wolverine sacrifices himself before being healed by Deadpool's healing factor blood, emerging as an MCU hero.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "deadpool",
+              "wolverine"
+            ]
+          }
+        ],
+        "charactersIntroduced": [
+          "deadpool",
+          "wolverine"
+        ],
+        "charactersAppearing": [
+          "deadpool",
+          "wolverine"
+        ],
+        "posterGradient": "linear-gradient(135deg, #8b0000, #f5f5f5)",
+        "imagePath": "assets/images/movies/deadpool-and-wolverine-2024.jpg"
+      },
+      {
+        "id": "captain-america-brave-new-world-2025",
+        "title": "Captain America: Brave New World",
+        "year": 2025,
+        "phase": 5,
+        "synopsis": "Sam Wilson, the new Captain America, is drawn into an international conspiracy involving the newly elected President Thaddeus Ross and a powerful substance called adamantium. Sam must navigate the treacherous intersection of politics and superheroics as he fully establishes himself in Steve Rogers' legacy.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "sam-official-cap",
+            "title": "Sam Wilson Is Captain America",
+            "description": "Sam Wilson steps into the Captain America role on the world stage for the first time at this scale. He is recognized globally as the new face behind the shield.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "sam-wilson"
+            ]
+          },
+          {
+            "id": "red-hulk-emerges",
+            "title": "President Ross Becomes Red Hulk",
+            "description": "President Thaddeus Ross, long associated with the Hulk program, transforms into the Red Hulk during a crisis. A sitting President of the United States becoming a rampaging monster has enormous political consequences.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "sam-wilson",
+              "bruce-banner"
+            ]
+          },
+          {
+            "id": "adamantium-conspiracy",
+            "title": "The Adamantium Conspiracy Unravels",
+            "description": "A shadowy conspiracy involving the newly discovered element adamantium - found in the Celestial emergence event - drives the film's central conflict. Multiple factions race to control the supply.",
+            "significance": "high",
+            "charactersInvolved": [
+              "sam-wilson"
+            ]
+          },
+          {
+            "id": "sam-leadership",
+            "title": "Sam Establishes His Own Legacy",
+            "description": "Sam Wilson defeats the threats facing the nation and earns his identity as Captain America on his own terms rather than as Steve Rogers' successor. A new era for the shield begins.",
+            "significance": "high",
+            "charactersInvolved": [
+              "sam-wilson"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "sam-wilson",
+          "bruce-banner"
+        ],
+        "posterGradient": "linear-gradient(135deg, #0a1931, #8b4513)",
+        "imagePath": "assets/images/movies/captain-america-brave-new-world-2025.jpg"
+      },
+      {
+        "id": "thunderbolts-2025",
+        "title": "Thunderbolts*",
+        "year": 2025,
+        "phase": 5,
+        "synopsis": "A group of morally ambiguous antiheroes and former villains are manipulated by Valentina Allegra de Fontaine into carrying out a covert mission, only to discover they are being set up as pawns in a larger game. The team must overcome their differences to confront a chilling threat that emerges from within their own ranks.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "thunderbolts-assembled",
+            "title": "The Thunderbolts Are Assembled",
+            "description": "Valentina Allegra de Fontaine assembles Yelena Belova, Bucky Barnes, Ghost, Red Guardian, John Walker, and Taskmaster as an unofficial black ops team. Each member has their own reasons for joining.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "yelena-belova",
+              "bucky-barnes"
+            ]
+          },
+          {
+            "id": "sentry-void-threat",
+            "title": "Bob Reynolds and the Void Emerge",
+            "description": "Bob Reynolds, a man with Superman-level power, is revealed to harbor a dark alter-ego called the Void that threatens to consume everything around him. The Thunderbolts must handle a threat that cannot be simply punched.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "yelena-belova",
+              "bucky-barnes"
+            ]
+          },
+          {
+            "id": "valentina-exposed",
+            "title": "Valentina's Machinations Exposed",
+            "description": "The team discovers Valentina has been manipulating them and Bob Reynolds for her own political ends. They turn against her and choose to protect Bob rather than use him as a weapon.",
+            "significance": "high",
+            "charactersInvolved": [
+              "yelena-belova",
+              "bucky-barnes"
+            ]
+          },
+          {
+            "id": "new-avengers-formation",
+            "title": "A New Team Is Legitimized",
+            "description": "The Thunderbolts emerge from their ordeal as a publicly recognized team, with Bucky Barnes stepping into a leadership role. The asterisk in the title is explained as Sam Wilson's editorial comment on the team.",
+            "significance": "critical",
+            "charactersInvolved": [
+              "yelena-belova",
+              "bucky-barnes",
+              "sam-wilson"
+            ]
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [
+          "yelena-belova",
+          "bucky-barnes",
+          "sam-wilson"
+        ],
+        "posterGradient": "linear-gradient(135deg, #1a1a1a, #3d0070)",
+        "imagePath": "assets/images/movies/thunderbolts-2025.jpg"
+      },
+      {
+        "id": "fantastic-four-first-steps-2025",
+        "title": "The Fantastic Four: First Steps",
+        "year": 2025,
+        "phase": 5,
+        "synopsis": "Set in an alternate universe Earth in a retro-futuristic 1960s, the Fantastic Four - Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm - face the world-devouring threat of Galactus, the destroyer of worlds. The film introduces the MCU's First Family and sets the stage for the next great saga.",
+        "importance": "recommended",
+        "keyEvents": [
+          {
+            "id": "fantastic-four-mcu-debut",
+            "title": "The Fantastic Four Join the MCU",
+            "description": "Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm are introduced as the MCU's Fantastic Four in a retro-futuristic alternate universe. Marvel's First Family arrives decades after their powers were first bestowed.",
+            "significance": "critical",
+            "charactersInvolved": []
+          },
+          {
+            "id": "galactus-arrives",
+            "title": "Galactus Threatens to Devour Earth",
+            "description": "Galactus, the world-devourer, and his Herald arrive to consume the Fantastic Four's Earth. The team faces a threat literally beyond conventional understanding or power.",
+            "significance": "critical",
+            "charactersInvolved": []
+          },
+          {
+            "id": "silver-surfer-betrayal",
+            "title": "The Silver Surfer's Role Revealed",
+            "description": "Norrin Radd serves Galactus as the Silver Surfer to protect his homeworld, but he must wrestle with the moral cost of leading a devourer to other civilizations. His crisis of conscience becomes pivotal.",
+            "significance": "high",
+            "charactersInvolved": []
+          },
+          {
+            "id": "multiverse-connection",
+            "title": "The Fantastic Four Connect to the MCU Multiverse",
+            "description": "The Fantastic Four's universe connects to the broader Multiverse Saga, linking their story to the coming conflict with Kang and eventual Avengers crossover. Marvel's First Family is now part of the grander tapestry.",
+            "significance": "critical",
+            "charactersInvolved": []
+          }
+        ],
+        "charactersIntroduced": [],
+        "charactersAppearing": [],
+        "posterGradient": "linear-gradient(135deg, #0a1a3a, #e05a00)",
+        "imagePath": "assets/images/movies/fantastic-four-first-steps-2025.jpg"
+      }
+    ]
+  }
+]

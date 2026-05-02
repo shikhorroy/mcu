@@ -1,0 +1,313 @@
+@use '../../../breakpoints' as *;
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+.movie-card {
+  width: 260px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-bg-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  cursor: pointer;
+  transition: transform 0.2s var(--transition-smooth), box-shadow 0.2s;
+  will-change: transform;
+  flex-shrink: 0;
+  user-select: none;
+  scroll-snap-align: start;
+
+  @include tablet {
+    width: 220px;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: auto;
+    flex-shrink: unset;
+    scroll-snap-align: none;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.04) translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+  }
+
+  &:active {
+    @include mobile {
+      transform: scale(0.98);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-gold);
+  }
+
+  &.is-essential {
+    box-shadow: 0 0 20px rgba(201,168,76,0.15);
+  }
+
+  &.is-watched {
+    border-color: rgba(201,168,76,0.4);
+  }
+}
+
+.card-poster {
+  position: relative;
+  height: 170px;
+  min-height: 170px;
+  flex-shrink: 0;
+  overflow: hidden;
+
+  @include mobile {
+    height: 180px;
+    min-height: 180px;
+  }
+}
+
+.poster-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+
+  &.loaded { opacity: 1; }
+}
+
+.scanline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+}
+
+.card-year {
+  position: absolute;
+  top: 8px; right: 8px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 0.05em;
+}
+
+.card-importance {
+  position: absolute;
+  top: 8px; left: 8px;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &.importance-essential {
+    background: rgba(201,168,76,0.4);
+    border: 1px solid rgba(201,168,76,0.8);
+    color: #ffd700;
+  }
+
+  &.importance-recommended {
+    background: rgba(79,195,247,0.3);
+    border: 1px solid rgba(79,195,247,0.7);
+    color: #4fc3f7;
+  }
+
+  &.importance-optional {
+    background: rgba(90,90,106,0.5);
+    border: 1px solid rgba(90,90,106,0.8);
+    color: #b0bec5;
+  }
+}
+
+.watched-badge {
+  position: absolute;
+  top: 8px; right: 8px;
+  width: 24px; height: 24px;
+  background: var(--color-accent-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.watched-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(201,168,76,0.12);
+  pointer-events: none;
+}
+
+.card-title-area {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 2rem 0.75rem 0.75rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+.card-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+  line-height: 1.3;
+  text-rendering: optimizeLegibility;
+}
+
+.card-body {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.card-synopsis {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  @include mobile {
+    -webkit-line-clamp: 3;
+    font-size: 0.8rem;
+  }
+}
+
+.card-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+
+  @include mobile {
+    .event-pill:nth-child(n+3) { display: none; }
+  }
+}
+
+.event-pill {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: var(--current-phase-color, rgba(79,195,247,0.2));
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+
+  &.sig-critical { background: rgba(226,54,54,0.2); color: var(--color-accent-red); }
+  &.sig-high { background: rgba(201,168,76,0.2); color: var(--color-accent-gold); }
+  &.sig-medium { background: rgba(79,195,247,0.15); color: var(--color-accent-blue); }
+  &.sig-low { background: rgba(90,90,106,0.2); color: var(--color-text-muted); }
+}
+
+.card-chars {
+  display: flex;
+  align-items: center;
+}
+
+.char-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--color-bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  margin-right: -8px;
+  transition: transform 0.15s, z-index 0s;
+  will-change: transform;
+  min-width: 32px;
+  min-height: 32px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+
+  .char-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &:hover { transform: translateY(-3px) scale(1.1); z-index: 10; }
+  &:focus-visible { outline: 2px solid var(--color-accent-gold); }
+
+  @include mobile {
+    width: 28px; height: 28px;
+    min-width: 28px; min-height: 28px;
+  }
+}
+
+.char-more {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  margin-left: 14px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 0.25rem;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  margin-top: auto;
+}
+
+.watch-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 44px;
+  user-select: none;
+
+  &:hover {
+    border-color: var(--color-accent-gold);
+    color: var(--color-accent-gold);
+  }
+
+  &.is-watched {
+    border-color: rgba(201,168,76,0.4);
+    color: var(--color-accent-gold);
+    background: rgba(201,168,76,0.08);
+  }
+
+  &:focus-visible { outline: 2px solid var(--color-accent-gold); }
+}

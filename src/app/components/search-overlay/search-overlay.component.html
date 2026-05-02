@@ -1,0 +1,75 @@
+<div class="backdrop" (click)="onClose.emit()" aria-hidden="true"></div>
+<div class="search-box" role="search" aria-label="Search movies and characters">
+  <div class="search-input-wrap">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input
+      #searchInput
+      class="search-input"
+      type="text"
+      placeholder="Search movies, characters..."
+      [value]="query()"
+      (input)="setQuery($any($event.target).value)"
+      (click)="$event.stopPropagation()"
+      autocomplete="off"
+      aria-label="Search"
+    />
+    @if (query()) {
+      <button class="clear-btn" (click)="setQuery('')" aria-label="Clear search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    }
+  </div>
+
+  @if (query()) {
+    <div class="results" (click)="$event.stopPropagation()">
+      @if (movieResults().length) {
+        <div class="result-group">
+          <div class="result-group-label">Movies</div>
+          @for (movie of movieResults(); track movie.id) {
+            <button class="result-item" (click)="selectMovie(movie)">
+              <div class="result-swatch" [style.background]="movie.posterGradient">
+                @if (movie.imagePath) {
+                  <img class="result-poster-image" [src]="movie.imagePath" [alt]="movie.title" (error)="$any($event.target).style.display='none'" />
+                }
+              </div>
+              <div class="result-info">
+                <span class="result-title">{{ movie.title }}</span>
+                <span class="result-meta">{{ movie.year }}</span>
+              </div>
+              <span class="result-badge" [class]="'imp-' + movie.importance">{{ movie.importance }}</span>
+            </button>
+          }
+        </div>
+      }
+      @if (charResults().length) {
+        <div class="result-group">
+          <div class="result-group-label">Characters</div>
+          @for (char of charResults(); track char.id) {
+            <button class="result-item" (click)="selectChar(char)">
+              <div class="result-avatar" [style.background]="char.avatarColor">
+                {{ getInitials(char.name) }}
+                @if (char.imagePath) {
+                  <img class="result-avatar-image" [src]="char.imagePath" [alt]="char.name" (error)="$any($event.target).style.display='none'" />
+                }
+              </div>
+              <div class="result-info">
+                <span class="result-title">{{ char.name }}</span>
+                @if (char.alias) { <span class="result-meta">{{ char.alias }}</span> }
+              </div>
+              <span class="result-badge side-badge" [class]="'side-' + char.side">{{ char.side }}</span>
+            </button>
+          }
+        </div>
+      }
+      @if (!movieResults().length && !charResults().length) {
+        <div class="no-results">No results for "{{ query() }}"</div>
+      }
+    </div>
+  } @else {
+    <div class="search-hint">Type to search across all 37 MCU films and 29 characters</div>
+  }
+</div>

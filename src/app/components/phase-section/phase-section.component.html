@@ -1,0 +1,43 @@
+<section
+  class="phase-section"
+  [class]="'phase-theme-' + phase().id"
+  [attr.data-phase]="phase().id"
+  [attr.id]="'phase-' + phase().id"
+>
+  <div class="phase-bg-number" aria-hidden="true">{{ phase().id }}</div>
+
+  <div class="phase-header">
+    <div class="saga-badge">{{ phase().sagaName }}</div>
+    <h2 class="phase-name">{{ phase().name }}</h2>
+    <p class="phase-tagline">{{ phase().tagline }}</p>
+    <div class="phase-meta">
+      <span class="phase-years">{{ phase().yearRange }}</span>
+      <span class="phase-count">{{ phase().totalMovies }} films</span>
+    </div>
+    <div class="phase-progress-bar">
+      <div
+        class="phase-progress-fill"
+        [style.width.%]="progressPct"
+      ></div>
+    </div>
+    <div class="phase-progress-label">
+      @if (isComplete) {
+        <span class="complete-badge">COMPLETE</span>
+      } @else {
+        <span class="progress-text">{{ watchedCount() }} / {{ phase().movies.length }} watched</span>
+      }
+    </div>
+  </div>
+
+  <div class="movie-timeline">
+    @for (movie of phase().movies; track movie.id) {
+      <app-movie-card
+        [movie]="movie"
+        [characters]="getCharsForMovie(movie)"
+        (onMovieClick)="onMovieClick.emit($event)"
+        (onToggleWatched)="toggleWatched($event)"
+        (onCharacterClick)="onCharacterClick.emit($event)"
+      />
+    }
+  </div>
+</section>

@@ -1,0 +1,21 @@
+@if (isSnapTransition) {
+  <div class="snap-banner" role="presentation">
+    <div class="snap-particles" aria-hidden="true">
+      @for (i of [1,2,3,4,5,6,7,8,9,10,11,12]; track i) {
+        <div class="particle" [style.--i]="i"></div>
+      }
+    </div>
+    <p class="snap-text">THE SNAP. HALF OF ALL LIFE. GONE.</p>
+  </div>
+} @else {
+  <div class="transition-strip">
+    @for (thread of threads; track thread.id) {
+      <div class="thread-pill" [class]="typeClass(thread.type)">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+        <span>{{ thread.label }}</span>
+      </div>
+    }
+  </div>
+}

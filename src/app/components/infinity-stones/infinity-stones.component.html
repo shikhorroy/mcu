@@ -1,0 +1,29 @@
+<section class="stones-section">
+  <div class="stones-header">
+    <h2 class="stones-title">THE INFINITY STONES</h2>
+    <p class="stones-sub">Six stones. One destiny. Snap.</p>
+  </div>
+
+  <div class="stones-row">
+    @for (stone of stones; track stone.name; let i = $index) {
+      <div class="stone-item" [class.triggered]="triggered()" [style.--delay]="(i * 0.3) + 's'">
+        <div class="gem-shape">
+          @if (stone.imagePath) {
+            <img [src]="stone.imagePath" [alt]="stone.name" class="stone-image" />
+          }
+        </div>
+        <div class="stone-name" [style.color]="stone.color">{{ stone.name }}</div>
+        <div class="stone-alias">{{ stone.alias }}</div>
+        <div class="stone-film">{{ stone.movie }}</div>
+        <div class="stone-phase">Phase {{ stone.phase }}</div>
+      </div>
+    }
+  </div>
+
+  @if (triggered()) {
+    <div class="snap-reveal">
+      <div class="gold-ring"></div>
+      <p class="snap-text">THANOS HAS ALL SIX STONES.</p>
+    </div>
+  }
+</section>

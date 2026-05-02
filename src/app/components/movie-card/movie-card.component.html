@@ -1,0 +1,86 @@
+<div
+  class="movie-card"
+  [class.is-watched]="isWatched()"
+  [class.is-essential]="movie().importance === 'essential'"
+  (click)="openDetail()"
+  role="button"
+  [attr.aria-label]="'Open details for ' + movie().title"
+  tabindex="0"
+  (keyup.enter)="openDetail()"
+>
+  <div class="card-poster" [style.background]="movie().posterGradient">
+    @if (posterImageUrl()) {
+      <img
+        class="poster-img"
+        [src]="posterImageUrl()!"
+        [alt]="movie().title"
+        [class.loaded]="imageLoaded()"
+        (load)="onImageLoad()"
+        (error)="onImageError($event)"
+      />
+    }
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="card-year">{{ movie().year }}</div>
+    <div class="card-importance" [class]="importanceClass">{{ importanceLabel }}</div>
+    @if (isWatched()) {
+      <div class="watched-badge" aria-label="Watched">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <div class="watched-overlay"></div>
+    }
+    <div class="card-title-area">
+      <h3 class="card-title">{{ movie().title }}</h3>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <p class="card-synopsis">{{ movie().synopsis }}</p>
+
+    <div class="card-events">
+      @for (event of movie().keyEvents.slice(0, 3); track event.id) {
+        <span class="event-pill" [class]="'sig-' + event.significance">{{ event.title }}</span>
+      }
+    </div>
+
+     <div class="card-chars">
+       @for (char of visibleChars; track char.id) {
+         <button
+           class="char-avatar"
+           [style.background]="!char.imagePath ? char.avatarColor : ''"
+           [attr.title]="char.name"
+           (click)="clickCharacter($event, char.id)"
+           [attr.aria-label]="'View ' + char.name"
+         >
+           @if (char.imagePath) {
+             <img [src]="char.imagePath" [alt]="char.name" class="char-image" />
+           } @else {
+             {{ getInitials(char.name) }}
+           }
+         </button>
+       }
+       @if (extraCharsCount > 0) {
+         <span class="char-more">+{{ extraCharsCount }}</span>
+       }
+     </div>
+
+    <div class="card-footer">
+      <button
+        class="watch-toggle"
+        [class.is-watched]="isWatched()"
+        (click)="toggleWatched($event)"
+        [attr.aria-label]="isWatched() ? 'Mark as unwatched' : 'Mark as watched'"
+      >
+        @if (isWatched()) {
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Watched
+        } @else {
+          + Mark watched
+        }
+      </button>
+    </div>
+  </div>
+</div>
