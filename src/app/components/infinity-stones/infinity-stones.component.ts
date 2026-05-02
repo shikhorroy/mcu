@@ -1,4 +1,5 @@
-import { Component, signal, OnInit, OnDestroy, ElementRef, inject, afterNextRender } from '@angular/core';
+import { Component, signal, OnDestroy, AfterViewInit, ElementRef, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 interface Stone {
   name: string;
@@ -24,32 +25,39 @@ const STONES: Stone[] = [
   templateUrl: './infinity-stones.component.html',
   styleUrl: './infinity-stones.component.scss'
 })
-export class InfinityStonesComponent implements OnInit, OnDestroy {
+export class InfinityStonesComponent implements AfterViewInit, OnDestroy {
   readonly stones = STONES;
   readonly triggered = signal(false);
-  private el = inject(ElementRef);
+  private el = inject<ElementRef<HTMLElement>>(ElementRef);
+  private platformId = inject(PLATFORM_ID);
   private observer?: IntersectionObserver;
 
-  constructor() {
-    afterNextRender(() => {
-      this.setupObserver();
-    });
+  ngAfterViewInit(): void {
+    this.setupObserver();
   }
 
-  ngOnInit(): void {}
-
   private setupObserver(): void {
+    if (!isPlatformBrowser(this.platformId) || typeof IntersectionObserver === 'undefined') {
+      this.triggered.set(true);
+      return;
+    }
+
+    const section = this.el.nativeElement.querySelector('.stones-section') as HTMLElement | null;
+    const target = section ?? this.el.nativeElement;
+
     this.observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.intersectionRatio >= 0.5) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
           this.triggered.set(true);
-        } else if (entry.intersectionRatio < 0.1) {
-          this.triggered.set(false);
+          this.observer?.disconnect();
         }
       },
-      { threshold: [0.1, 0.5] }
+      {
+        rootMargin: '0px 0px -12% 0px',
+        threshold: [0, 0.2]
+      }
     );
-    this.observer.observe(this.el.nativeElement);
+    this.observer.observe(target);
   }
 
   ngOnDestroy(): void {
